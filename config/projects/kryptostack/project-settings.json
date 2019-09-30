@@ -1,0 +1,105 @@
+{
+  "domain": "staging-2-kryptostack.chaincreator.exchange",
+  "projectId": "10dc05dc-9ab4-40c8-b224-b7ca59c4fc4b",
+  "title": "Kryptostack | Cryptocurrency Exchange",
+  "themeName": "kryptostack",
+  "defaultPairs": ["BTC-USDC", "ETH-USDC", "XRP-USDC", "LTC-USDC", "ETH-BTC", "LTC-BTC"],
+  "defaultMarketPair": "BTC-USDC",
+  "themeSettings": {
+    "socialNetworks": ["twitter", "telegram"],
+    "themeAnalyticsClient": "null",
+    "themeAnalyticsGlobal": "UA-117801824-12",
+    "themeHotjarClient": "null",
+    "themeMode": true,
+    "customLogin": "http://staging.kryptostack.com/auth/login",
+    "customLogout": "http://staging.kryptostack.com/auth/logout",
+    "customSignUp": "http://staging.kryptostack.com/auth/register",
+    "bgUrlAuth": {
+      "backgroundImage": "url(/static/img/themes/kryptostack/kryptostack-bg.png)"
+    },
+    "logoUrlAuth": "/static/img/themes/kryptostack/logo-exchange-on-light.svg",
+    "logoUrlAccount": "/static/img/themes/kryptostack/logo-exchange-on-dark.svg",
+    "logoUrlBlank": "/static/img/themes/kryptostack/logo-exchange-on-light.svg",
+    "logoUrlTrade": "/static/img/themes/kryptostack/logo-exchange-on-dark.svg",
+    "logoHref": "https://kryptostack.com/",
+    "faviconUrl": "/static/img/themes/kryptostack/logo-exchange-favicon.png",
+    "showAllApps": false,
+    "navItems": [
+      {
+        "name": "Dashboard",
+        "to": "account.dashboard",
+        "icon": "fas fa-tachometer-alt"
+      },
+      {
+        "name": "Wallet",
+        "to": "account.wallet",
+        "icon": "fas fa-wallet",
+        "activeTabs": [
+          "account.deposits",
+          "account.withdrawals"
+        ]
+      },
+      {
+        "name": "Orders",
+        "to": "account.openOrders",
+        "icon": "fas fa-exchange-alt",
+        "activeTabs": [
+          "account.tradeHistory"
+        ]
+      },
+      {
+        "name": "Referral",
+        "to": "account.referral",
+        "icon": "fas fa-link"
+      }
+    ],
+    "navStaticPages": [
+      {
+        "name": "Support",
+        "href": "https://google.com"
+      },
+      {
+        "name": "Terms",
+        "href": "https://google.com"
+      },
+      {
+        "name": "Fees",
+        "href": "https://google.com"
+      }
+    ],
+    "carouselItems": [
+      {
+        "src": "./static/img/themes/kryptostack/banners/kryptostack-banner-demo.jpg",
+        "class": "light-theme",
+        "h3": "Custom banner title",
+        "p_1": "Custom <br><strong>text<\/strong>",
+        "p_2": "",
+        "btnName": "Check your voucher now",
+        "href": "https://google.com"
+      },
+      {
+        "src": "./static/img/themes/kryptostack/banners/kryptostack-banner-demo.jpg",
+        "class": "light-theme",
+        "h3": "Custom banner title",
+        "p_1": "Custom<strong><\/strong>text<\/strong>",
+        "p_2": "Custom<strong style=\"font-size: 20px\">text<\/strong>",
+        "btnName": "Custom button",
+        "href": "https://google.com"
+      },
+      {
+        "src": "./static/img/themes/kryptostack/banners/kryptostack-banner-demo.jpg",
+        "class": "light-theme",
+        "h3": "Custom banner title",
+        "p_1": "Custom<strong><\/strong>text<\/strong>",
+        "p_2": "",
+        "btnName": "Custom button",
+        "href": "https://google.com"
+      }
+    ],
+    "tradeTabsOrder": [
+      "limit",
+      "market",
+      "stop"
+    ]
+  }
+}

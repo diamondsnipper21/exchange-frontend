@@ -1,0 +1,136 @@
+/* ----------------------
+  NAVIGATION
+---------------------- */
+.cce-account__navigation {
+  /*width: 285px !important;*/
+  padding: 80px 15px 0 15px;
+  background-color: $light-trade-colorTradingBg;
+
+  @include media(lg_med) {
+    padding-right: 0;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid $exchange-green-transparent-4;
+  }
+
+  .user-profile-mobile {
+    @include flexCenterCenter;
+    @include fullSize;
+    flex-flow: row;
+    margin-bottom: 20px;
+
+    .user-avatar {
+      width: 30%;
+      text-align: right;
+      padding-right: 15px;
+      i {
+        font-size: 60px;
+        color: $exchange-gray-2;
+      }
+    }
+    .user-info {
+      width: 60%;
+      p {
+        margin: 0 !important;
+      }
+      button {
+        margin: 0 !important;
+      }
+    }
+  }
+  .cce-account__navigation-list {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $light-trade-colorMainBg;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    min-height: calc(100% - 30px);
+    margin: 15px 0;
+    border-radius: 3px;
+
+    .list__tile {
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      padding-left: 0;
+
+      .list__tile__content {
+        @include flexAlignCenter;
+        justify-content: start;
+        flex-direction: row;
+
+        i {
+          display: inline-flex;
+          margin: 0 15px 0 20px;
+          @include size(30px);
+          color: $exchange-gray-2;
+          font-size: 20px;
+        }
+        .list__tile__title {
+          @include size(auto);
+          @include flexColumn;
+          overflow: visible;
+
+          span {
+            color: $simple-orange-1;
+            font-size: 12px;
+            line-height: 1;
+          }
+        }
+      }
+    }
+    .list__tile--active {
+      i {
+        color: $light-exchange-primary-1 !important;
+      }
+      .list__tile__title {
+        color: $light-exchange-primary-1 !important;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .custom__list__tile--active {
+    background: $exchange-green-transparent-4;
+    i {
+      color: $exchange-gray-2 !important;
+    }
+    .list__tile__title {
+      color: $exchange-gray-2 !important;
+      font-weight: 600;
+    }
+  }
+
+  .cce-account__navigation__static-menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .static-menu {
+    @include flexCenterCenter;
+    list-style: none;
+    flex-flow: row;
+    border-top: 1px solid $exchange-green-transparent-4;
+    margin-top: 15px;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    width: 215px;
+    overflow: hidden;
+
+    li {
+      a {
+        color: $exchange-gray-2;
+        padding: 10px;
+        text-decoration: none;
+      }
+      a:hover {
+        color: $exchange-green-2;
+      }
+    }
+  }
+}

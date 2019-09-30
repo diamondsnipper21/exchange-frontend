@@ -1,0 +1,150 @@
+/* ----------------------
+  TABLE
+---------------------- */
+.cce-account__balance-summary {
+  font-size: 16px;
+  margin: 0 0 25px 0;
+  @include media(sm) {
+    @include flexColumn;
+  }
+}
+
+.cce-account__balance-label {
+  font-family: $account-fontFamily;
+}
+
+.cce-account__balance-summary-estimated {
+  float: left;
+}
+
+.cce-account__balance-summary-limit {
+  float: right;
+  margin: 0 40px 0 0;
+}
+
+.cce-account__balance-summary-in-use {
+  float: right;
+}
+
+.resp-tab {
+  table {
+    background: transparent !important;
+    border-collapse: collapse;
+    margin: 0 0 100px 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+
+    table caption {
+      font-size: 1.5em;
+      margin: .5em 0 .75em;
+    }
+
+    thead {
+      th {
+        background: $exchange-green-2;
+        color: $light-exchange-table-th-color;
+        font-size: 14px !important;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border: none;
+
+        .icon {
+          color: $simple-white-0 !important;
+        }
+        .cce-deposit-withdrawal-trade {
+          color: $light-exchange-btn-color-1;
+          text-decoration: none;
+          border: 1px solid $light-exchange-btn-border-1;
+          padding: 5px 7px;
+          margin-left: 10px;
+          height: max-content;
+        }
+        td:last-child {
+          > div.op-buttons {
+            display: flex;
+            flex-direction: row-reverse;
+          }
+        }
+
+      }
+      tr:nth-child(2n){
+        td {
+          background: $transparent-black-6 !important;
+        }
+      }
+
+    }
+
+    .datatable__expand-col--expanded {
+      border-top: 2px solid $simple-white-1;
+      border-bottom: 2px solid $simple-white-1;
+    }
+
+    .cce-account__table-expand {
+      padding: 25px;
+    }
+  }
+}
+
+/*.cce-account__table {
+  table {
+    background: transparent !important;
+  }
+
+
+  table.table thead tr {
+    height: 46px;
+  }
+
+  thead {
+    tr {
+      border: none !important;
+    }
+
+    th {
+      color: #fff !important;
+      background: #0DA19C;
+      font-size: 15px !important;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border: none !important;
+    }
+
+    td {
+      font-size: 14px !important;
+    }
+  }
+
+  table tbody tr td:last-child {
+    padding: 0;
+  }
+
+    tr:nth-child(4n+3){
+    td {
+      background: rgba(155, 174, 211, 0.08) !important;
+    }
+  }
+
+  tr:nth-child(2n){
+    td {
+      background: rgba(155, 174, 211, 0.08) !important;
+    }
+  }
+
+
+}*/

@@ -1,0 +1,22 @@
+.btn-custom {
+  width: 35px !important;
+}
+
+@import './general-menu';
+@import './layout';
+@import './carousel-slider';
+@import './select-coin';
+@import './mobile';
+@import './dashboard-tab';
+@import './wallet-tab';
+@import './deposits-tab';
+@import './withdrawals-tab';
+@import './open-orders-tab';
+@import './trade-history-tab';
+@import './responsive-tabs';
+@import './trade-scrollbar';
+@import './trade-stats';
+@import './trade-panel';
+@import './trade-form';
+@import './timeline-controls';
+@import './pair-selector';

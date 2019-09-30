@@ -1,0 +1,11 @@
+  The system has detected a successful account log in from a new IP address: {{ip}}
+
+  Please follow the link bellow to unlock your account:
+  {{siteUrl}}/#/emails/cip/{{confirmNewIPToken}}
+
+  Thank you,
+  The ChainCreator Team
+
+  {{#if antiPhishingEnabled}}
+  Anti-phishing {{antiPhishingCode}}
+  {{/if}}

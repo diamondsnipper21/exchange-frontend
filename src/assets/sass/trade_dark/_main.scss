@@ -1,0 +1,111 @@
+/* ----------------------
+  MAIN
+---------------------- */
+body.cee--no-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.cce-trade__logo {
+  // width: auto;
+  flex-grow: 1;
+  height: 36px;
+  width: 36px;
+  margin: 0 !important;
+  // background-image: url('#{$dark-img-trade-logo}');
+  background-repeat: no-repeat;
+  background-size: contain;
+  img {
+    max-height: 100%;
+    // display: none;
+  }
+
+  .cce-trade--mobile & {
+    display: none;
+  }
+}
+
+.cce-color__low {
+  color: $dark-trade-colorLow;
+}
+
+.cce-background__low {
+  background: $dark-trade-colorLow;
+}
+
+.cce-color__high {
+  color: $dark-trade-colorHigh;
+}
+
+.cce-background__high {
+  background: $dark-trade-colorHigh;
+}
+
+.cce-color__warning {
+  color: $dark-trade-colorWarning;
+}
+
+.cce-trade__opacity {
+  opacity: 0.45;
+}
+
+.cce-trade__bar-icons {
+  height: 36px;
+  border-left: 1px solid $exchange-gray-5;
+}
+
+.cce-trade__bar-icons-item {
+  margin-left: 10px !important;
+  width: 36px;
+  height: 36px !important;
+}
+
+.cce-trade__bar-icons-logout {
+  margin-left: 15px !important;
+}
+
+.cce-trade__link {
+  color: $dark-trade-colorHigh;
+  text-decoration: none;
+}
+
+.cce-trade__no-data {
+  opacity: 0.6;
+  @include fontFamilyTrade;
+  color: $dark-trade-colorSubHeaderText;
+  font-size: 12px;
+}
+
+.cce-trade__btn.btn {
+  color: $dark-trade-colorBtnText;
+  @include fontFamilyTrade;
+  opacity: 1;
+
+  .progress-circular {
+    position: absolute;
+    left: 10px;
+  }
+}
+
+.btn--small {
+  font-size: 12px;
+  height: 28px;
+}
+
+.list--dense .list__tile:not(.list__tile--avatar) {
+  height: 30px;
+}
+
+.bottom-nav {
+  background-color: $dark-trade-colorMainBg;
+  .btn {
+    min-width: 60px;
+    .btn__content {
+      color: $dark-normal-links-on-dark;
+    }
+    &.btn--active {
+      .btn__content {
+        color: $dark-active-links-on-dark;
+      }
+    }
+  }
+}

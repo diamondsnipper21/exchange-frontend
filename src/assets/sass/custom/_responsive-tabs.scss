@@ -1,0 +1,91 @@
+/* ----------------------
+  RESPONSIVE TAB's
+---------------------- */
+@include media(sm) {
+  .resp-tab {
+
+    table {
+      border: 0;
+      caption {
+        font-size: 1.3em;
+      }
+      thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        tr {
+          td {
+            font-size: 12px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          display: block;
+          margin: 10px 0;
+          border: none !important;
+          padding: 10px 0 !important;
+
+          td {
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            font-size: 12px;
+            border-bottom: 1px solid $transparent-white-4;
+            text-align: right;
+
+            &:nth-child(1) {
+              padding-top: 30px;
+            }
+
+            &:last-child {
+              border-bottom: none;
+              padding-top: 15px;
+              padding-bottom: 30px;
+            }
+          }
+          td::before {
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(lg_max) {
+  
+}
+
+@include media(lg_min) {
+
+}
+
+@include media(md) {
+
+}
+
+@include media(sm) {
+  .container {
+    padding: 15px;
+  }
+  .flex {
+    width: 100%;
+  }
+  .subheading {
+    border-bottom: 1px solid $exchange-green-2;
+    font-size: 14px !important;
+  }
+}
+
+@include media(xs_med) {
+
+}

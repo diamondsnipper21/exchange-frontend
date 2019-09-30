@@ -1,0 +1,10 @@
+  Please follow the link bellow to activate your account on ChainCreator.exchange:
+  
+  {{siteUrl}}/#/emails/ca/{{confirmAccountToken}}
+
+  Thank you,
+  The ChainCreator Team
+
+  {{#if antiPhishingEnabled}}
+  Anti-phishing {{antiPhishingCode}}
+  {{/if}}

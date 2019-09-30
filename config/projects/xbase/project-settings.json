@@ -1,0 +1,102 @@
+{
+  "domain": "staging-2-xbase.chaincreator.exchange",
+  "projectId": "31900b3c-f4b5-4cfc-a512-b14392e447ca",
+  "title": "xBase | Cryptocurrency Exchange",
+  "themeName": "xBase",
+  "defaultPairs": ["BTC-USDC", "ETH-USDC", "XRP-USDC", "LTC-USDC", "ETH-BTC", "LTC-BTC"],
+  "defaultMarketPair": "BTC-USDC",
+  "themeSettings": {
+    "googleAuthName": "xBase.Exchange",
+    "socialNetworks": ["twitter", "telegram"],
+    "themeAnalyticsClient": "UA-127215104-1",
+    "themeAnalyticsGlobal": "UA-117801824-12",
+    "themeHotjarClient": "null",
+    "themeMode": true,
+    "customLogin": "#/login",
+    "bgUrlAuth": {
+      "backgroundImage": "url(/static/img/themes/xbase/blur-auth-bg.jpg)"
+    },
+    "logoUrlAuth": "/static/img/themes/xbase/logo-exchange-on-dark.png",
+    "logoUrlAccount": "/static/img/themes/xbase/logo-exchange-on-dark.png",
+    "logoUrlBlank": "/static/img/themes/xbase/logo-exchange-on-dark.png",
+    "logoUrlTrade": "/static/img/themes/xbase/logo-exchange-on-dark.png",
+    "logoHref": "https://xbase.exchange/",
+    "faviconUrl": "/static/img/themes/xbase/logo-exchange-favicon.png",
+    "showAllApps": false,
+    "navItems": [
+      {
+        "name": "Dashboard",
+        "to": "account.dashboard",
+        "icon": "fas fa-tachometer-alt"
+      },
+      {
+        "name": "Wallet",
+        "to": "account.wallet",
+        "icon": "fas fa-wallet",
+        "activeTabs": [
+          "account.deposits",
+          "account.withdrawals"
+        ]
+      },
+      {
+        "name": "Orders",
+        "to": "account.openOrders",
+        "icon": "fas fa-exchange-alt",
+        "activeTabs": [
+          "account.tradeHistory"
+        ]
+      },
+      {
+        "name": "Settings",
+        "to": "account.settings",
+        "icon": "fas fa-sliders-h"
+      },
+      {
+        "name": "Referral",
+        "to": "account.referral",
+        "icon": "fas fa-link"
+      }
+    ],
+    "navStaticPages": [
+      {
+        "name": "Support",
+        "href": "https://xbase.exchange/support/"
+      },
+      {
+        "name": "Terms",
+        "href": "https://xbase.exchange/terms/"
+      },
+      {
+        "name": "Fees",
+        "href": "https://xbase.exchange/fees/"
+      }
+    ],
+    "carouselItems": [
+      {
+        "src": "",
+        "class": "light-theme",
+        "h3": "COMMUNITY COIN VOTING",
+        "p_1": "Community Coin Voting is a program<br>to determine new coins or tokens eligible<br> to be listed on xBase exchange for free.",
+        "p_2": "",
+        "btnName": "Vote on your favorite coin",
+        "href": "https://xbase.exchange/community-coin/",
+        "secondImage": "/static/img/themes/xbase/banners/second-img-banner.png"
+      },
+      {
+        "src": "",
+        "class": "light-theme",
+        "h3": "XBASE AND NEXO PARTNERSHIP",
+        "p_1": "Get instant cash in 40+ fiat currencies<br>using crypto as collateral without selling it.",
+        "p_2": "",
+        "btnName": "GET INSTANT LOAN",
+        "href": "https://nexo.io/xrp-loan/?utm_source=xBase_Button&utm_campaign=xBase_Button",
+        "secondImage": "/static/img/themes/xbase/banners/second-img-banner-02.png"
+      }
+    ],
+    "tradeTabsOrder": [
+      "market",
+      "limit",
+      "stop"
+    ]
+  }
+}

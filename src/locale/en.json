@@ -1,0 +1,821 @@
+{
+  "PartnerRegister": {
+    "start": "Start New Exchange",
+    "account_successfully_created": "New Partner is successfully registered. There will be some updates. Please wait...",
+    "form_label_exchange": "Exchange Name",
+    "form_label_email": "Email",
+    "form_label_password": "Password",
+    "form_label_repeat_password": "Repeat password",
+    "create_exchange": "Create New Exchange",
+    "exchange_name_not_correct": "Exchange Name should be letters, numbers or dash.",
+    "passwords_dont_match": "Passwords don't match.",
+    "password_message_weak": "Weak",
+    "password_message_moderate": "Moderate",
+    "password_message_strong": "Strong"
+  },
+
+  "LogInPage": {
+    "log_in": "Log In",
+    "not_a_member": "Not a member?",
+    "sign_up": "Sign Up",
+    "forgot_password": "Forgot password?",
+    "send_recovery_email": "Send recovery email."
+  },
+  "LogInForm": {
+    "otp": "OTP",
+    "sms": "SMS",
+    "successfully_logged_in": "Successfully logged in.",
+    "sms_code_was_sent": "A sms code was sent to the provided phone number.",
+    "log_in": "Log in",
+    "send_sms": "Send SMS",
+    "form_label_email": "Email",
+    "form_label_password": "Password",
+    "form_label_google_auth_code": "Google Authentication Code",
+    "form_label_phone_number": "Phone number",
+    "form_label_sms_code": "SMS Code"
+  },
+
+
+  "RegisterPage": {
+    "sign_up": "Sign Up",
+    "already_a_member": "Already a member?",
+    "log_in": "Log in"
+  },
+  "RegisterForm": {
+    "account_successfully_created": "Account successfully created. Please check your email to activate it.",
+    "form_label_email": "Email",
+    "form_label_password": "Password",
+    "form_label_repeat_password": "Repeat password",
+    "create_account": "Create account",
+    "passwords_dont_match": "Passwords don't match.",
+    "password_message_weak": "Weak",
+    "password_message_moderate": "Moderate",
+    "password_message_strong": "Strong"
+  },
+
+
+  "ForgotPasswordPage": {
+    "reset_password": "Reset Password",
+    "password_recovery_link_sent": "Password recovery link sent.",
+    "form_label_email": "Email",
+    "send_recovery_link": "Send recovery link",
+    "email_field_is_empty": "Email field is empty!"
+  },
+  "UpdatePasswordForm": {
+    "password_updated_successfully": "Password updated successfully.",
+    "form_label_password": "Password",
+    "form_label_repeat_password": "Repeat password",
+    "update_password": "Update password",
+    "passwords_dont_match": "Passwords don't match.",
+    "password_message_weak": "Weak",
+    "password_message_moderate": "Moderate",
+    "password_message_strong": "Strong"
+  },
+
+
+  "RecoverPasswordPage": {
+    "reset_password": "Reset Password",
+    "requiest_successfully_proceeded": "Request successfully processed. Complete the form in order to set a new password.",
+    "processing_request": "Processing your request, please stand by..."
+  },
+
+
+  "ConfirmAccountPage": {
+    "account_confirmation": "Account Confirmation",
+    "account_successfully_confirmed": "Account successfully confirmed.",
+    "confirming_account": "Confirming your account, please stand by...",
+    "router_links": "<router-link to=\"/account/wallet\" class=\"cce-trade__link\">Deposit funds</router-link> or <router-link to=\"/trade\" class=\"cce-trade__link\">watch the price rise!</router-link>"
+  },
+
+  "ConfirmNewIPPage": {
+    "login_from_new_ip": "Login from new IP",
+    "account_successfully_unlocked": "Account successfully unlocked.",
+    "unlocking_account": "Unlocking your account, please stand by..."
+  },
+
+
+  "TempOrderBook": {
+    "order_book": "Order Book",
+    "price": "Price",
+    "amount": "Amount",
+    "total": "Total",
+    "decrease_precision": "Decrease precision",
+    "increase_precision": "Increase precision",
+    "restore_scroll": "Restore scroll"
+  },
+
+
+  "TradeOrderBook": {
+    "order_book": "Order Book",
+    "price": "Price",
+    "amount": "Amount",
+    "total": "Total",
+    "decrease_precision": "Decrease precision",
+    "increase_precision": "Increase precision",
+    "restore_scroll": "Restore scroll"
+  },
+
+
+  "TradeForm": {
+    "log_in": "Log in",
+    "sign_up": "Sign Up",
+    "or": "or",
+    "to_access_trading_options": "to access the trading options",
+    "tab_limit": "Limit",
+    "tab_market": "Market",
+    "tab_stop_limit": "Stop Limit",
+    "place_tradeaction_order": "Place {tradeAction} order",
+    "buy": "Buy",
+    "sell": "Sell",
+    "trade_action": "{tradeAction}",
+    "available": "Available",
+    "price": "Price",
+    "market_price": "Market price",
+    "limit": "Limit",
+    "stop": "Stop",
+    "amount": "Amount",
+    "ratio": "Ratio",
+    "total": "Total",
+    "tooltip_buy": "The % of your total {marketType} balance that you want to exchange for {currency}",
+    "tooltip_sell": "'The % of your total {currency} balance that you want to exchange for {marketType}"
+  },
+
+
+  "TradeHistory": {
+    "previous_trades": "Previous Trades",
+    "time": "Time",
+    "price": "Price",
+    "amount": "Amount",
+    "no_data": "No data"
+  },
+
+
+  "TradeBottomNav": {
+    "trade": "Trade",
+    "book": "Book",
+    "charts": "Charts",
+    "orders": "Orders",
+    "history": "History"
+  },
+
+
+  "TradeUserOrders": {
+    "open_orders": "Open Orders",
+    "trade_history": "Trade History",
+    "date": "Date",
+    "type": "Type",
+    "buy_sell": "Buy / Sell",
+    "price": "Price",
+    "amount": "Amount",
+    "fee": "Fee",
+    "filled": "Filled",
+    "status": "Status",
+    "action": "Action",
+    "buy": "Buy",
+    "sell": "Sell",
+    "out_of": "Out of ",
+    "status_line": "{status}",
+    "cancel": "Cancel",
+    "have_no_open_orders": "You have no open orders",
+    "have_no_trade_history": "You have no trade history",
+    "selected": "selected"
+  },
+
+
+  "TradeBar": {
+    "log_in": "Log In"
+  },
+
+
+  "TradeMarket": {
+    "search_input_label": "Search",
+    "no_results": "No results",
+    "coin": "Coin",
+    "last_price": "Last Price",
+    "volume_24": "Volume(24h)",
+    "change": "Change"
+  },
+
+
+  "TradeCharts": {
+    "price_chart": "Price chart",
+    "market_depth_chart": "Market Depth Chart",
+    "depth_chart": "Depth chart"
+  },
+
+
+  "TradeChartDepth": {
+    "buy_orders": "Buy Orders",
+    "sell_orders": "Sell Orders",
+    "can_be_bought": "Can be bought",
+    "can_be_sold": "Can be sold",
+    "for_total_of": "For a total of"
+  },
+
+
+  "TradeVolume": {
+    "24h_volume": "24h Volume"
+  },
+
+
+  "OrderBookFakeRow": {
+    "no_data": "No data"
+  },
+
+
+  "Account": {
+    "welcome": "Welcome",
+    "check_email_and_confirm": "Please check your email and confirm your account to deposit or trade.",
+    "trading_is_disabled": "Thank you for registering early on our exchange as a private beta user! Unfortunately, trading is disabled at the moment but we'll message you once it's fully available.",
+    "enable_2fa_auth": "Please enable 2FA authentication in order to better protect your account!"
+  },
+
+
+  "Navigation": {
+    "Dashboard": "Dashboard",
+    "Trade": "Trade",
+    "Wallet": "Wallet",
+    "Deposits": "Deposits",
+    "Withdrawals": "Withdrawals",
+    "Orders": "Orders",
+    "Open Orders": "Open Orders",
+    "Trade History": "Trade History",
+    "Settings": "Settings",
+    "Tickets & Vouchers": "Tickets & Vouchers",
+    "Referral": "Referral",
+    "Bonus": "Bonus",
+    "admin_portal": "Admin Portal"
+  },
+  "StaticPages": {
+    "Support": "Support",
+    "About": "About",
+    "Get listed": "Get listed",
+    "Community coin": "Community coin",
+    "Listing contest": "Listing contest",
+    "Listing agreement": "Listing agreement",
+    "Terms": "Terms",
+    "Privacy": "Privacy",
+    "Fees": "Fees",
+    "FAQ": "FAQ",
+    "Contact": "Contact",
+    "Custom page": "Custom page"
+  },
+
+
+  "Dashboard": {
+  },
+  "RecentActivityTable": {
+    "recent_activity": "Recent Activity",
+    "recent_custom": "Custom Recent Activity",
+    "buy": "Buy",
+    "sell": "Sell",
+    "no_orders": "No orders",
+    "date": "Date",
+    "type": "Type",
+    "buy_sell": "Buy / Sell",
+    "price": "Price",
+    "amount": "Amount",
+    "status": "Status"
+  },
+
+  "RecentLogsTable": {
+    "recent_logs": "Recent Logs",
+    "type": "Type",
+    "date": "Date",
+    "ip": "IP",
+    "location": "Location",
+    "have_no_recent_logs": "You have no recent logs."
+  },
+
+
+  "Deposits": {
+    "deposits": "Deposits",
+    "total_balance": "Total Balance",
+    "locked_balance": "Locked Balance",
+    "available_balance": "Available Balance",
+    "deposits_unavailable": "The deposits are currently <strong>unavailable</strong> for",
+    "your_wallet_address": "Your <span class=\"cce-capitalize cce-color__high\">{currencyName}</span> wallet address",
+    "tip": "Tip",
+    "tip_1": "1. The address is not allowed to deposit other assets other than <span class=\"cce-capitalize cce-color__high\">{currencyName}</span>, and any other asset deposit will not be recovered.",
+    "tip_2": "2. The deposit transaction will be automatic, and the <span class=\"cce-capitalize cce-color__high\">{currencyName}</span> transfer will need to be confirmed by the entire <span class=\"cce-capitalize cce-color__high\">{currencyName}</span> network, and your <span class=\"cce-capitalize cce-color__high\">{currencyName}</span> will be automatically deposited to your account after 8 confirmation.",
+    "tip_3": "3. This address is the only one you can use on your own, and you can do multiple recharging at the same time.",
+    "deposit_history": "Deposit History"
+  },
+  "AccountDeposits": {
+    "no_data": "No data",
+    "time": "Time",
+    "amount": "Amount",
+    "transaction_id": "Transaction ID",
+    "confirmations": "Confirmations",
+    "status": "Status"
+  },
+
+
+  "Wallet": {
+    "wallet": "Wallet",
+    "estimated_value": "Estimated value",
+    "in_use": "In use",
+    "search_field_label": "Search",
+    "hide_zero_balances": "Hide zero balances",
+    "deposit": "Deposit",
+    "withdrawal": "Withdrawal",
+    "trade": "Trade",
+    "coin": "Coin",
+    "available_amount": "Available amount",
+    "in_orders": "In orders",
+    "total": "Total",
+    "operation": "Operation"
+  },
+  "WalletsTable": {
+    "name": "Name",
+    "currency": "Currency",
+    "address": "Address",
+    "createdAt": "Created",
+    "available": "Available",
+    "in_orders": "In Orders",
+    "total": "Total",
+    "estimated_value": "Estimated value",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "no_data": "No data"
+  },
+  "ZeroBalanceAssets": {
+    "zero_balance_assets": "Zero Balance Assets"
+  },
+  "WalletsModal": {
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "history": "History"
+  },
+  "Deposit": {
+    "copied_to_clipboard": "Copied to clipboard",
+    "processing_time": "Processing Time",
+    "processing_time_description": "<span class=\"cce-uppercase\">{currency}</span> network transfers will be credited to your account after {minConfirmations} network confirmations."
+  },
+  "WalletHistory": {
+    "received": "<span class=\"cce-color__high\">Received</span>",
+    "sent": "<span class=\"cce-color__low\">Sent</span>"
+  },
+
+
+  "History": {
+    "trade_history": "Trade History",
+    "buy": "Buy",
+    "sell": "Sell",
+    "have_no_trade_history": "You have no trade history",
+    "market": "Market",
+    "date": "Date",
+    "buy_sell": "Buy / Sell",
+    "filled_price": "Price",
+    "amount": "Amount",
+    "fee_usdc": "Fee(USDC)",
+    "filled": "Filled",
+    "filled_usdc": "Filled(USDC)",
+    "status": "Status",
+    "total": "Total",
+    "select_pair": "Select pair to see total values."
+  },
+  "AccountCoinSelect": {
+    "select_coin": "Select coin"
+  },
+
+
+  "Orders": {
+    "open_orders": "Open Orders",
+    "trade_history": "Trade History",
+    "download_csv_file": "Download CSV file",
+    "no_data_to_download": "No data to download",
+    "buy": "Buy",
+    "sell": "Sell",
+    "cancel": "Cancel",
+    "have_no_open_orders": "You have no open orders",
+    "market": "Market",
+    "date": "Date",
+    "type": "Type",
+    "buy_sell": "Buy / Sell",
+    "price": "Price",
+    "amount": "Amount",
+    "filled": "Filled",
+    "fee": "Fee",
+    "percent": "%",
+    "status": "Status",
+    "action": "Action",
+    "total": "Total",
+    "select_pair": "Select pair to see total values."
+  },
+
+
+  "Withdrawals": {
+    "withdrawals": "Withdrawals",
+    "total_balance": "Total Balance",
+    "locked_balance": "Locked Balance",
+    "available_balance": "Available Balance",
+    "successfully_scheduled_withdrawal": "We successfully scheduled your withdrawal and it will soon be reviewed and processed by our support team.",
+    "address_input_label": "Address",
+    "account_name_input_label": "Account name",
+    "amount_input_label": "Amount",
+    "between_min_max": "Between {minWithdrawAmount} and {maxWithdrawAmount} <span class=\"cce-uppercase\">{currency}</span>",
+    "fee": "Fee",
+    "you_will_receive": "You will receive",
+    "send": "Send",
+    "tip": "Tip",
+    "tip_1": "1. The transfer of digital assets between the accounts of the platform is not supported, please ensure that your transfer address is non exchange account address.",
+    "tip_2": "2. We will process your withdrawal in 30 minutes. It depends on the blockchain when the assets will finally transfer to your wallet.",
+    "tip_3": "3. To enhance the security of your assets, if your withdrawal amount is larger than $10000 we have to manually process your request, please double check your withdraw address.",
+    "withdrawal_history": "Withdrawal History",
+    "withdrawal_request_will_be_processed": "Your withdraw request will be processed after you have submitted your KYC.",
+    "documents_to_be_submitted": "Documents to be submitted",
+    "national_id_copy": "National ID copy",
+    "uitility_bill_copy": "Uitility Bill copy",
+    "picture_with_message": "A picture with you holding the following message: <b>HUBRIS ONE, CHAINCREATOR, YOUR NAME</b>",
+    "please_send_documents_to": "Please send the documents to",
+    "once_we_have_received_them": "Once we have received them your request will be processed immediately",
+    "ok_i_understand": "Ok, I understand",
+    "requestSubmitted": "Please check your email for withdrawal confirmation.",
+    "requestPending": "Your withdrawal is being processed."
+  },
+  "ConfirmPaymentPage": {
+    "payment_confirmation": "Withdrawal Request",
+    "payment_successfully_confirmed": "Your withdrawal request is confirmed.",
+    "confirming_payment": "Confirming your withdrawal request, please stand by...",
+    "router_links": ""
+  },
+  "AccountPayments": {
+    "no_data": "No data",
+    "time": "Time",
+    "amount": "Amount",
+    "transaction_id": "Transaction ID",
+    "address": "Address",
+    "status": "Status"
+  },
+
+
+  "Settings": {
+    "settings": "Settings",
+    "account_settings_updated_successfully": "Account settings updated successfully.",
+    "sms_code_was_sent": "SMS code was sent to the provided phone number",
+    "change_login_password": "Change Login Password",
+    "old_password_label": "Old password",
+    "new_password_label": "New password",
+    "current_password_label": "Current password",
+    "repeat_new_password_label": "Repeat new password",
+    "google_auth_code_label": "Google Authentication Code",
+    "anti_phishing_code_label": "AntiPhishing Code",
+    "sms_code_label": "SMS code",
+    "save": "Save",
+    "enable_google_auth": "Enable Google Authentication",
+    "disable_google_auth": "Disable Google Authentication",
+    "please_scan_qr": "Please scan the QR code with your Google Authentication app then fill in the code bellow and your password.",
+    "google_auth_secret": "Google Authentication Secret",
+    "enable_anti_phishing_code": "Enable Anti-Phishing Code",
+    "disable_anti_phishing_code": "Disable Anti-Phishing Code",
+    "enable_sms_auth": "Enable SMS Authentication",
+    "disable_sms_auth": "Disable SMS Authentication",
+    "passwords_dont_match": "Passwords don't match.",
+    "incorrect_otp_code": "Incorrect OTP code. Please try again.",
+    "general_error": "General error. Please contact support"
+  },
+  "IntTelInput": {
+    "phone_number_label": "Phone number",
+    "phone_number_placeholder": "Enter a maximum of 10 digits"
+  },
+
+
+  "Vouchers": {
+    "your_vouchers": "Your Vouchers",
+    "congrats": "<strong>CONGRATS!</strong> By registering you have become the proud owner of <strong>50$</strong> worth of our trading coin!<br>You will gain access to your free tokens on the day the <strong>TRADING COIN ICO</strong> is launched.",
+    "usd_worth_of_tc": "USD worth of TC",
+    "your_tickets": "Your Tickets",
+    "win_1_million_usd": "WIN 1 MILLION USD WORTH OF TRADING COINS",
+    "rules": "Rules: For every $1000 worth of trading volume you do on your account, our system will produce one unique ticket (number code) which automatically gets entered into the draw. With every trade you are one step closer to winning. The winner will be selected just before the trading coin is launched."
+  },
+
+
+  "Referral": {
+    "referral_plan": "Referral plan",
+    "comission_on_every_trade": "20% comission on every single trade!",
+    "my_referral_id": "My Referral ID",
+    "your_referral_link": "Your Referral Link",
+    "share": "Share",
+    "clicks": "clicks",
+    "registrations": "registrations",
+    "trades": "trades",
+    "total_earned": "total earned",
+    "no_data": "No data",
+    "user_id": "UserId",
+    "date": "Date",
+    "total_trades": "Total Trades",
+    "earns": "Earns",
+    "successfully": "successfully",
+    "unsuccessfully": "unsuccessfully",
+    "referral_link_copy_success": "Referral link was copied {msg}",
+    "referral_link_copy_fail": "Unable to copy referral link {msg}"
+  },
+
+
+  "Admin": {
+
+  },
+  "AdminSubMenu": {
+    "overview": "Overview",
+    "users": "Users",
+    "orders": "Orders",
+    "earnings": "Earnings",
+    "wallets": "Wallets",
+    "settings": "Settings"
+  },
+  "AdminStatistics": {
+    "exchange_statistics": "Exchange Statistics",
+    "registrations": "Registrations",
+    "trades": "Trades",
+    "trading_volume": "Trading Volume",
+    "estimated_earnings": "Estimated Earnings",
+    "withdrawals": "Withdrawals",
+    "deposits": "Deposits"
+  },
+  "AdminRecentTrades": {
+    "recent_trades": "Recent Trades",
+    "buy": "Buy",
+    "sell": "Sell",
+    "no_orders": "No orders",
+    "date": "Date",
+    "type": "Type",
+    "buy_sell": "Buy / Sell",
+    "amount": "Amount",
+    "commision": "Commision",
+    "status": "Status"
+  },
+  "AdminNewUsers": {
+    "new_users": "New Users",
+    "no_users": "No users",
+    "date": "Date",
+    "email": "Email",
+    "ip": "IP"
+  },
+
+  "AdminManageUser": {
+    "manage_user": "Manage User",
+    "user_email": "User email",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "kyc": "KYC",
+    "two_factor": "2FA",
+    "email": "Email",
+    "phone": "Phone",
+    "status": "Status",
+    "sms_key": "SMS Key",
+    "search": "SEARCH",
+    "placeholder_first_name": "John",
+    "placeholder_last_name": "Smith",
+    "placeholder_email": "john@smith.com",
+    "placeholder_phone": "+1 4151234567",
+
+    "cancel_btn": "Close",
+    "ok_btn": "Ok",
+    "save_btn": "SAVE",
+
+    "modal_save_title": "Save User Information",
+    "modal_save_message": "Do you really want to update user informations?",
+    "modal_cancel_title": "Cancel Order",
+    "modal_cancel_message": "Do you really want to cancel traders order?",
+
+    "Widget" : {
+      "user_wallets": "Wallets",
+      "user_completed_orders": "Trade History",
+      "user_open_orders": "Open Orders",
+      "user_payments": "Payments",
+      "user_logs": "Logs"
+    }
+  },
+
+  "AdminManageSetting" : {
+    "Tab": {
+      "settings_branding": "Branding",
+      "settings_markets": "Markets",
+      "settings_admins": "Admins",
+      "settings_other": "Other"
+    },
+
+    "header_logo": "Header logo",
+    "logo_href": "Website URL",
+    "favicon": "Favicon",
+    "colors_dark_theme": "Colors (Dark theme)",
+    "colors_brand": "Brand Color",
+    "colors_page_background": "Page background",
+    "colors_container_background": "Containers background",
+    "colors_buy": "Buy",
+    "colors_sell": "Sell",
+    "colors_light_theme": "Colors (Light theme)",
+
+    "logo_title_dark": "Desktop Dark",
+    "logo_title_light": "Desktop Light",
+    "logo_title_mobile_dark": "Mobile Dark",
+    "logo_title_mobile_light": "Mobile Light",
+
+    "link_change": "Change",
+    "link_delete": "Delete",
+    "logo_desc": "Upload a new logo, or delete the existing logo",
+    "logo_desktop_size": "(Image size should be 200 * 60)",
+    "logo_mobile_size": "(Image size should be 60 * 60)",
+    "url_desc": "Clicking on the logo will take users to this URL.",
+    "color_desc": "Click input element to select color.",
+    "host_mapping": "Host mapping",
+    "host_mapping_desc": "Use this setting to map your own domain name to your exchange. For example, use trade.myexchange.com.",
+    "host_mapping_learn_more": "Learn more",
+    "host_mapping_import": "Important",
+    "host_mapping_import_desc": "When you enter a domain name, it will be used immediately. You must create the proper CNAME DNS record before adding the domain. Your system administrator knows how to do this.",
+    "host_mapping_cancel": "Cancel change request",
+    "host_mapping_instructions": "Setup instructions",
+    "host_mapping_dns_instructions": "Add the following CNAME record to the DNS configuration for your domain.",
+    "host_mapping_validation_instructions": "After updating your DNS configuration, we will verify every few minutes if the DNS changes have propagated, and then finalize the change.",
+    "host_mapping_validation_name_acmDomain": "DNS validation for certificate",
+    "host_mapping_validation_desc_acmDomain": "This DNS record will authorize ChainCreator to issue and renew SSL certificates for your new domain.",
+    "host_mapping_validation_name_acmCertificate": "Certificate validation",
+    "host_mapping_validation_desc_acmCertificate": "This informs you whether the new certificate has been issued and validated.",
+    "host_mapping_validation_name_cloudfrontCreate": "Domain DNS validation",
+    "host_mapping_validation_desc_cloudfrontCreate": "This DNS record will map your new domain to your exchange.",
+    "host_mapping_validation_name_cloudfrontSetup": "Finish",
+    "host_mapping_validation_desc_cloudfrontSetup": "Finalize setup and send email notification to partner",
+
+    "edit_btn": "EDIT",
+    "save_btn": "SAVE",
+    "default_btn": "DEFAULT",
+
+    "cancel_btn": "Close",
+    "ok_btn": "Ok",
+
+    "modal_save_title": "Save Branding Information",
+    "modal_save_message": "Do you really want to update branding informations?",
+
+    "modal_delete_file_title": "Delete File Information",
+    "modal_delete_file_message": "Do you really want to delete file?",
+
+    "modal_change_file_title": "Change File Information",
+    "modal_change_file_message": "Do you really want to change file?",
+
+    "modal_set_default_title": "Set Default Value Information",
+    "modal_set_default_message": "Do you really want to reset color values as default?",
+
+    "save_complete_message": "Branding information is updated",
+
+    "Markets" : {
+      "quote_currency": "Quote Currency",
+      "base_currency": "Base Currency",
+      "currency": "Currency",
+      "status": "Status",
+      "liquidity": "Liquidity",
+      "withdrawal_fee": "Withdrawal Fee",
+      "min_withdrawal": "Min WithdrawalFee",
+      "max_withdrawal": "Max WithdrawalFee",
+      "min_order_amount": "Min Order Amount",
+      "max_order_amount": "Max Order Amount",
+      "min_order_unit_price": "Min Order Unit Price",
+      "max_order_unit_price": "Max Order Unit Price",
+      "maker_fee": "Maker Fee",
+      "taker_fee": "Taker Fee"
+    },
+
+    "Other" : {
+      "title": "Exchange Links",
+      "url_support": "Support URL",
+      "url_terms": "Terms URL",
+      "url_fees": "Fees URL",
+      "modal_save_title": "Save Exchange Links Information",
+      "modal_save_message": "Do you really want to update informations?",
+
+      "save_complete_message": "Exchange Links information is updated"
+    }
+  },
+
+  "UserWalletWidget": {
+    "have_no_wallets": "User has no wallets."
+  },
+
+  "UserOpenOrdersWidget": {
+    "have_no_open_orders": "User has no open orders."
+  },
+
+  "UserTradeHistoryWidget": {
+    "have_no_trade_history": "User has no trade history."
+  },
+
+  "UserLogsWidget": {
+    "have_no_logs": "User has no logs."
+  },
+
+  "UserPaymentWidget": {
+    "date": "Date",
+    "amount": "Amount",
+    "currency": "Currency",
+    "fee": "Fee",
+    "balance": "Balance",
+    "status": "Status",
+    "paymentType": "Payment Type",
+    "have_no_payments": "User has no payments."
+  },
+
+  "CarouselItems": {
+    "Valued $1 Million": {
+      "h3": "Valued $1 Million",
+      "p_1": "Count down to winning tickets!",
+      "p_2": "Buy at exchanges highest<br>bid & highest volume win",
+      "btnName": "Go to headpay.com"
+    },
+    "Register now, and get 50$ in TradingCoin": {
+      "h3": "Register now, and get 50$ in TradingCoin",
+      "p_1": "You will gain access to your free tokens on the day the <br><strong>TRADING COIN ICO is launched<\/strong>",
+      "p_2": "",
+      "btnName": "Check your voucher now"
+    },
+    "WIN 1 MILLION USD WORTH OF TRADING COINS": {
+      "h3": "WIN 1 MILLION USD WORTH OF TRADING COINS",
+      "p_1": "For every <strong>$1000 worth of trading volume<\/strong> you do on your account, our system will produce one unique ticket (number code) which automatically gets entered into the draw.",
+      "p_2": "The winner will be randomly selected, on the <br><strong style=\"font-size: 20px\">February 1st 2019<\/strong>",
+      "btnName": "Check your ticket now"
+    },
+    "Exchange listing competition": {
+      "h3": "Exchange listing competition",
+      "p_1": "<strong>5 tokens<\/strong> will be selected to win an exchange listing <br> yours can be one of <strong>the lucky winners<\/strong>!",
+      "p_2": "",
+      "btnName": "See more details"
+    },
+    "REFERRAL PLAN": {
+      "h3": "REFERRAL PLAN",
+      "p_1": "Receive up to <strong>20% commission<\/strong> in real time!",
+      "p_2": "",
+      "btnName": "See referral"
+    },
+    "COMMUNITY COIN VOTING": {
+      "h3": "COMMUNITY COIN VOTING",
+      "p_1": "Community Coin Voting is a program<br>to determine new coins or tokens eligible<br> to be listed on xBase exchange for free.",
+      "p_2": "",
+      "btnName": "Vote on your favorite coin"
+    },
+    "XBASE AND NEXO PARTNERSHIP": {
+      "h3": "XBASE AND NEXO PARTNERSHIP",
+      "p_1": "Get instant cash in 40+ fiat currencies<br>using crypto as collateral without selling it.",
+      "p_2": "",
+      "btnName": "GET INSTANT LOAN"
+    },
+    "Custom banner title": {
+      "h3": "Custom banner title",
+      "p_1": "Custom <br><strong>text<\/strong>",
+      "p_2": "",
+      "btnName": "Check your voucher now"
+    }
+  },
+
+
+  "App": {
+    "buy": "Buy",
+    "sell": "Sell",
+    "canceled_status_notification": "{actionType} order has been canceled <br />{amount} {currency} @ {unitPrice} {marketType}"
+  },
+
+
+  "Errors": {
+    "default_error": "Something went wrong",
+    "An error occurred while retrieving project settings.": "1001: An error occurred while retrieving project settings.",
+    "time value has to be lower than current time.": "1002: time value has to be lower than current time.",
+    "Unknown market type.": "1003: Unknown market type.",
+    "endTime value has to be bigger than startTime value.": "1004: endTime value has to be bigger than startTime value.",
+    "Not allowed to view orders for this user.": "1005: Not allowed to view orders for this user.",
+    "Someone already created with the same email.": "1006: Someone already created with the same email.",
+    "Account does not exist.": "1007: Account does not exist.",
+    "Incorrect password. Please try again.": "1008: Incorrect password. Please try again.",
+    "Incorrect OTP code.": "1009: Incorrect OTP code.",
+    "Incorrect SMS code.": "1010: Incorrect SMS code.",
+    "Wrong token.": "1011: Wrong token.",
+    "Wrong token type.": "1012: Wrong token type.",
+    "The token expired.": "1013: The token expired.",
+    "The user doesn't exist": "1014: The user doesn't exist",
+    "Something went wrong when trying to log out.": "1015: Something went wrong when trying to log out.",
+    "Someone already registered with the same email.": "1016: Someone already registered with the same email.",
+    "User not found.": "1017: User not found.",
+    "Missing phone number.": "1018: Missing phone number.",
+    "Current sms code is incorrect.": "1019: Current sms code is incorrect.",
+    "Missing email address.": "1020: Missing email address.",
+    "Account does not exist or sms authentication not enabled.": "1021: Account does not exist or sms authentication not enabled.",
+    "Current password is incorrect.": "1022: Current password is incorrect.",
+    "Wallet service is not available at the moment.": "1023: Wallet service is not available at the moment.",
+    "Unsupported market.": "1024: Unsupported market.",
+    "Unknown market type": "1025: Unknown market type",
+    "This market is currently disabled.": "1026: This market is currently disabled.",
+    "Unknown currency type.": "1027: Unknown currency type.",
+    "This currency is currently disabled.": "1028: This currency is currently disabled.",
+    "Invalid project ID.": "1029: Invalid project ID.",
+    "No such project.": "1030: No such project.",
+    "Could not place order.": "1031: Could not place order.",
+    "Not enough volume for market orders.": "1032: Not enough volume for market orders.",
+    "Limit price should be bigger than stop price.": "1033: Limit price should be bigger than stop price.",
+    "Stop price should be bigger than limit price.": "1034: Stop price should be bigger than limit price.",
+    "No such order.": "1035: No such order.",
+    "Could not cancel order.": "1036: Could not cancel order.",
+    "Order already canceled.": "1037: Order already canceled.",
+    "Could not find order on API.": "1038: Could not find order.",
+    "withdrawal_request_confirmation_failed": "We were unable to confirm your payment, please try again or contact support."
+  },
+  "Common": {
+    "or": "or"
+  }
+}

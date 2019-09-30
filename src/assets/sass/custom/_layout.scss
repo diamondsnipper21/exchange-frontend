@@ -1,0 +1,40 @@
+/* ----------------------
+  LAYOUT
+---------------------- */
+.cce-trade__history {
+  max-width: 310px;
+  min-width: 310px;
+  @media (max-width: 960px) {
+    max-width: 100%;
+  }
+}
+
+.cce-trade__orders-trade {
+  max-width: 350px;
+  min-width: 350px;
+  @media (max-width: 960px) {
+    max-width: 100%;
+  }
+}
+
+.cce-trade__user-orders {
+  min-height: 180px;
+  max-height: 30%;
+}
+
+.cce-trade__user-orders--hide {
+  min-height: 115px;
+  max-height: 115px;
+}
+
+.cce-trade__depth-chart {
+  max-height: 25%;
+}
+
+.cce-trade__form {
+    max-height: 328px;
+}
+
+.cce-trade__form--hide {
+  max-height: 115px;
+}

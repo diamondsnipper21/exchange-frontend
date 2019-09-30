@@ -1,0 +1,215 @@
+/* ----------------------
+  TRADE MARKET
+---------------------- */
+.cce-trade__market-container {
+  z-index: 99999 !important;
+  max-width: 95%;
+}
+
+.cce-trade__market {
+  margin: 0 0 0 15px !important;
+  @include fontFamilyTrade;
+  align-items: center;
+  max-width: 302px;
+
+  @media (min-width: 960px) {
+    min-width: 302px;
+  }
+}
+
+.cce-trade__market-btn {
+  font-size: 18px;
+  font-weight: 300;
+
+  i {
+    background-color: inherit !important;
+  }
+
+  .btn__content {
+    padding: 0 4px 0 12px;
+  }
+}
+
+.cce-trade__market-search {
+  position: relative;
+  top: -2px;
+  margin: 0 0 0 0;
+  padding: 0;
+  background: transparent !important;
+  max-width: 150px;
+  
+  &.input-group {
+    flex: auto;
+  }
+
+  label {
+    top: 5px;
+    font-size: 14px;
+    color: $light-trade-colorHeaderText !important;
+  }
+
+  input {
+    font-size: 14px;
+    color: $light-trade-colorHeaderText;
+  }
+
+  i {
+    color: $light-trade-colorHeaderText !important;
+    top: 3px;
+    position: relative;
+  }
+}
+
+.cce-trade__market-currency {
+  //
+}
+
+.cce-trade__market-currency-name {
+  font-size: 11px;
+  position: relative;
+  top: -2px;
+  left: 3px;
+}
+
+.cce-trade__market-currency-icon-img {
+  @include size(16px);
+  float: left;
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+}
+
+.cce-trade__market-content {
+  background: $light-trade-colorDark;
+  max-width: 500px;
+  min-height: 100px;
+  z-index: 99999;
+  position: relative;
+
+  .cce-trade__table {
+    .table {
+      thead {
+        th {
+          width: 90px;
+          font-size: 9px !important;
+          position: relative;
+          
+          @media (min-width: 450px) {
+            width: 100px;
+          }
+
+          @media (min-width: 550px) {
+            width: 120px;
+            font-size: 14px !important;
+          }
+
+          button {
+            top: 0;
+            bottom: 0;
+            margin: 0;
+            @include size(30px);
+
+            .icon {
+              font-size: 16px;
+            }
+          }
+        }
+
+        :not(.datatable__progress) th:last-of-type {
+          width: 48px;
+          padding: 2px 0 !important;
+
+          @media (min-width: 550px) {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+        }
+
+        .datatable__progress {
+          tr {
+            width: 100%;
+          }
+          th {
+            max-width: 490px;
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+
+      tbody {
+        height: 325px;
+
+        tr {
+          border-color: transparent !important;
+          display: block;
+          position: relative;
+
+          &.cce-trade__table-hover:hover {
+            background-color: $light-trade-colorBgActiveAlt !important;
+          }
+        }
+
+        td {
+          cursor: pointer;
+          width: 90px;
+          font-size: 9px !important;
+          position: relative;
+
+          @media (min-width: 450px) {
+            width: 100px;
+          }
+
+          @media (min-width: 450px) {
+            font-size: 12px !important;
+          }
+
+          @media (min-width: 550px) {
+            width: 120px;
+            font-size: 14px !important;
+          }
+
+          &.datatable__action {
+            width: 35px;
+            padding: 2px !important;
+
+            @media (min-width: 550px) {
+              position: absolute;
+              top: 0;
+              left: 445px;
+            }
+          }
+
+          button {
+            top: 0;
+            bottom: 0;
+            margin: 0;
+            right: 5px;
+            @include size(30px);
+
+            .icon {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.cce-trade__market-tabs {
+  .tabs__bar {
+    background: $light-trade-colorDark;
+    border-bottom: 1px solid $light-trade-colorDivider;
+  }
+
+  .tabs__item {
+    font-size: 16px;
+  }
+
+  .tabs__item--active {
+    background: $light-trade-colorContentBg;
+    color: $light-trade-colorActive;
+  }
+}

@@ -1,0 +1,95 @@
+/* ----------------------
+  TRADE PANEL
+---------------------- */
+.cce-trade__panel {
+  @include flexColumn;
+  flex-wrap: nowrap;
+  min-width: 0;
+  position: relative;
+  flex: 1 1 auto;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.cce-trade__panel-title {
+  padding: 8px 15px;
+  max-height: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  @include fontFamilyTrade;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cce-trade__panel-content {
+  height: 100%;
+}
+
+.cce-trade__panel-hide {
+  margin: 6px 7px 0 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.cce-trade__panel-orders-stats {
+  max-height: 40px;
+  min-height: 32px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.cce-trade__panel-orders-stats--sticky {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+}
+
+.cce-trade__panel-orders-stats-value {
+  padding-right: 10px;
+}
+
+.cce-trade__panel-orders-stats-price {
+  position: relative;
+  font-weight: 600;
+  // padding-right: 10px;
+}
+
+.cce-trade__panel-orders-stats-arrow {
+  font-size: 13px;
+}
+
+.cce-trade__panel-orders-stats-change {
+  text-align: right;
+  padding-right: 10px;
+  @include flexAlignCenter;
+  justify-content: flex-end;
+}
+
+.cce-trade__panel-orders-stats-change-title {
+  font-size: 13px;
+  position: relative;
+  top: 0;
+  @include fontFamilyTrade;
+}
+
+.cce-trade__panel-orders-stats-change-value {
+  display: inline-flex;
+  overflow: hidden;
+  max-width: 80px;
+}
+
+.cce-trade__panel-orders--hide-sell {
+  max-height: 0;
+}
+
+.cce-trade__panel-orders--hide-buy {
+  max-height: 30px;
+}

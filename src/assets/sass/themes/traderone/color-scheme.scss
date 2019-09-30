@@ -1,0 +1,240 @@
+// IMG Root
+$light-img-trade-logo: '~/static/img/themes/traderone/logo-exchange-on-light.svg';
+$dark-img-trade-logo: '~/static/img/themes/traderone/logo-exchange-on-dark.svg';
+$light-img-trade-logo-symbol: '~/static/img/themes/traderone/logo-exchange-symbol-on-light.svg';
+$dark-img-trade-logo-symbol: '~/static/img/themes/traderone/logo-exchange-symbol-on-dark.svg';
+$light-img-account-logo: '~/static/img/themes/traderone/logo-exchange-on-light.svg';
+$dark-img-account-logo: '~/static/img/themes/traderone/logo-exchange-on-dark.svg';
+$light-img-account-logo-symbol: '~/static/img/themes/traderone/logo-exchange-symbol-on-light.svg';
+$dark-img-account-logo-symbol: '~/static/img/themes/traderone/logo-exchange-symbol-on-dark.svg';
+
+// General things
+$simple-white-0: #ffffff;
+$simple-white-1: #f5f5f5;
+$simple-white-2: #ebebeb;
+$simple-white-3: #bebebe;
+$simple-white-4: #919191;
+
+$transparent-white-1: rgba(255, 255, 255, 0.8);
+$transparent-white-2: rgba(255, 255, 255, 0.6);
+$transparent-white-3: rgba(255, 255, 255, 0.4);
+$transparent-white-4: rgba(255, 255, 255, 0.2);
+$transparent-white-5: rgba(255, 255, 255, 0.1);
+$transparent-white-6: rgba(255, 255, 255, 0.05);
+
+$simple-black-0: #000000;
+$simple-black-1: #000000;
+$simple-black-2: #000000;
+
+$transparent-black-1: rgba(0, 0, 0, 0.8);
+$transparent-black-2: rgba(0, 0, 0, 0.6);
+$transparent-black-3: rgba(0, 0, 0, 0.4);
+$transparent-black-4: rgba(0, 0, 0, 0.2);
+$transparent-black-5: rgba(0, 0, 0, 0.1);
+$transparent-black-6: rgba(0, 0, 0, 0.05);
+
+$simple-blue-0: #36cfff;
+$simple-blue-1: #10a4ff;
+$simple-blue-2: #0f75b9;
+
+$simple-orange-0: #ffa401;
+$simple-orange-1: #ef7d0b;
+$simple-orange-2: #c96a0b;
+
+$simple-yellow-0: #ffd106;
+$simple-yellow-1: #ffb600;
+$simple-yellow-2: #d79700;
+
+$simple-green-1: #4caf50;
+
+$exchange-gray--1: #f0f1f5;
+$exchange-gray-0: #a0b4d7;
+$exchange-gray-1: #8596b9;
+$exchange-gray-2: #7282a5;
+$exchange-gray-3: #606b8a;
+$exchange-gray-4: #434d5f;
+$exchange-gray-5: #212837;
+$exchange-gray-6: #161b2e;
+$exchange-gray-7: #0c101c;
+
+$exchange-green-0: #95fcff;
+$exchange-green-1: #6cf2ff;
+$exchange-green-2: #44e6ff;
+$exchange-green-3: #41c3dc;
+$exchange-green-4: #3899af;
+$exchange-green-5: #0f272d;
+
+$dark-exchange-primary-1: #44e6ff;
+$light-exchange-primary-1: #44e6ff;
+
+$dark-exchange-account-title: #44e6ff;
+$light-exchange-account-title: #44e6ff;
+
+$dark-exchange-btn-color-1: #44e6ff;
+$dark-exchange-btn-border-1: #44e6ff;
+$dark-exchange-btn-bg-1: rgba(236, 178, 21, 0);
+
+$light-exchange-btn-color-1: #44e6ff;
+$light-exchange-btn-border-1: #44e6ff;
+$light-exchange-btn-bg-1: rgba(236, 178, 21, 0);
+
+$dark-exchange-table-th-color: rgba(68, 230, 255, 0.8);
+$light-exchange-table-th-color: rgba(255, 255, 255, 0.8);
+
+$dark-normal-links-on-dark: #9baed3;
+$dark-active-links-on-dark: #44e6ff;
+
+$light-normal-links-on-dark: #9baed3;
+$light-active-links-on-dark: #44e6ff;
+
+$exchange-green-transparent-0: rgba(68, 230, 255, 0.8);
+$exchange-green-transparent-1: rgba(68, 230, 255, 0.6);
+$exchange-green-transparent-2: rgba(68, 230, 255, 0.4);
+$exchange-green-transparent-3: rgba(68, 230, 255, 0.2);
+$exchange-green-transparent-4: rgba(68, 230, 255, 0.1);
+
+$gradient-1-moz: -moz-linear-gradient(left,  $exchange-green-5 0%, $exchange-green-2 100%);
+$gradient-1-web: -webkit-linear-gradient(left,  $exchange-green-5 0%, $exchange-green-2 100%);
+$gradient-1-lin: linear-gradient(to right,  $exchange-green-5 0%, $exchange-green-2 100%);
+$gradient-1-filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr=$exchange-green-5, endColorstr=$exchange-green-2 ,GradientType=1 )';
+
+$overlay-dark-bg: rgba(0, 0, 0, 0.8);
+$overlay-light-bg:  rgba(255, 255, 255, 0.9);
+
+
+/* ----------------------
+   DARK THEME
+   ---------------------- */
+// For the trade interface
+$dark-trade-colorTradingBg: #222836;
+$dark-trade-colorMainBg: #121626;
+$dark-trade-colorHeaderBg: #121626;
+$dark-trade-colorHeaderText: #9baed3;
+$dark-trade-colorContentBg: #161b2e;
+$dark-trade-colorSubHeaderText: #5b6577;
+$dark-trade-colorDivider: #23283c;
+$dark-trade-colorLow: #ff3856;
+$dark-trade-colorLowLight: #ff5765;
+$dark-trade-colorHigh: #44e6ff;
+$dark-trade-colorHighLight: #95fcff;
+$dark-trade-colorActive: #00b1ff;
+$dark-trade-colorBgActive: #1e253f;
+$dark-trade-colorDark: #020a1a;
+$dark-trade-colorBarAsk: rgba(221,132,46,.1);
+$dark-trade-colorBarBid: rgba(13,161,156,.1);
+$dark-trade-colorBtnText: #fff;
+$dark-trade-colorInputBg: #101524;
+$dark-trade-colorWarning: #cf411d;
+$trade-fontFamily: 'Poppins', sans-serif;
+
+// For the Price Chart interface
+$dark-chart-ToolbarBg: #161b2e;
+$dark-chart-PanePropertiesBackground: #161b2e;
+$dark-chart-PanePropertiesVertGridPropertiesColor: rgba(255,255,255,.06);
+$dark-chart-PanePropertiesHorzGridPropertiesColor: rgba(255,255,255,.06);
+$dark-chart-ScalesPropertiesTextColor: #7583a1;
+$dark-chart-ScalesPropertiesLineColor: rgba(255,255,255,.06);
+$dark-chart-PanePropertiesCrossHairPropertiesColor: #44e6ff;
+$dark-chart-MainSeriesPropertiesCandleStyleUpColor: #44e6ff;
+$dark-chart-MainSeriesPropertiesCandleStyleDownColor: #ff3856;
+$dark-chart-MainSeriesPropertiesCandleStyleBorderUpColor: #44e6ff;
+$dark-chart-MainSeriesPropertiesCandleStyleBorderDownColor: #ff3856;
+$dark-chart-VolumeVolumeColor0: rgba(245, 170, 20, 0.1);
+$dark-chart-VolumeVolumeColor1: rgba(68, 230, 255, 0.1);
+
+// For the Depth Chart interface
+$dark-chart-ChartBackgroundColor: #161b2e;
+$dark-chart-xAxisGridLineColor: rgba(255,255,255,.05);
+$dark-chart-xAxisLineColor: rgba(255,255,255,.07);
+$dark-chart-xAxisTickColor: rgba(255,255,255,.07);
+$dark-chart-xAxisLabelsColor: #7583a1;
+$dark-chart-yAxisGridLineColor: rgba(255,255,255,.08);
+$dark-chart-yAxisLineColor: rgba(255,255,255,.2);
+$dark-chart-yAxisTickColor: rgba(255,255,255,.2);
+$dark-chart-yAxisLabelsColor: #7583a1;
+$dark-chart-tooltipBackgroundColor: rgba(255,255,255,.1);
+$dark-chart-tooltipBorderColor: rgba(255,255,255,.08);
+$dark-chart-tooltipColor: #7583A1;
+$dark-chart-legendItemStyleColor: #5b6577;
+$dark-chart-legendItemHoverStyleColor: #7583a1;
+$dark-chart-legendItemHiddenStyleColor: #7e7e7e;
+$dark-chart-seriesBuyColor: rgba(68, 230, 255, 0.8);
+$dark-chart-seriesSellColor: rgba(255, 56, 86, 0.8);
+
+/* ----------------------
+   LIGHT THEME
+   ---------------------- */
+// For the trade interface
+$light-trade-colorTradingBg: #f5f5f5;
+$light-trade-colorMainBg: #ebebeb;
+$light-trade-colorHeaderBg: #44e6ff;
+$light-trade-colorHeaderText: rgba(255, 255, 255, 0.8);
+$light-trade-colorContentBg: #ffffff;
+$light-trade-color-active-ContentBg: rgba(0, 0, 0, 0.05);
+$light-trade-colorSubHeaderText: #5b6577;
+$light-trade-colorDivider: #ebebeb;
+$light-trade-colorLow: #ff3856;
+$light-trade-colorLowLight: #ff5765;
+$light-trade-colorHigh: #44e6ff;
+$light-trade-colorHighLight: #95fcff;
+$light-trade-colorActive: #00b1ff;
+$light-trade-colorBgActive: rgba(0, 0, 0, 0.05);
+$light-trade-colorBgActiveAlt: rgba(0, 0, 0, 0.1);
+$light-trade-colorDark: #f5f5f5;
+$light-trade-colorBarAsk: rgba(221,132,46,.1);
+$light-trade-colorBarBid: rgba(13,161,156,.1);
+$light-trade-colorBtnText: #fff;
+$light-trade-colorInputBg: #ebebeb;
+$light-trade-colorWarning: #cf411d;
+$trade-fontFamily: 'Poppins', sans-serif;
+
+// For the Price Chart interface
+$light-chart-ToolbarBg: #ffffff;
+$light-chart-PanePropertiesBackground: #ffffff;
+$light-chart-PanePropertiesVertGridPropertiesColor: rgba(0,0,0,.1);
+$light-chart-PanePropertiesHorzGridPropertiesColor: rgba(0,0,0,.1);
+$light-chart-ScalesPropertiesTextColor: #7583a1;
+$light-chart-ScalesPropertiesLineColor: rgba(0,0,0,.1);
+$light-chart-PanePropertiesCrossHairPropertiesColor: #44e6ff;
+$light-chart-MainSeriesPropertiesCandleStyleUpColor: #44e6ff;
+$light-chart-MainSeriesPropertiesCandleStyleDownColor: #ff3856;
+$light-chart-MainSeriesPropertiesCandleStyleBorderUpColor: #44e6ff;
+$light-chart-MainSeriesPropertiesCandleStyleBorderDownColor: #ff3856;
+$light-chart-VolumeVolumeColor0: rgba(221,132,46,.1);
+$light-chart-VolumeVolumeColor1: rgba(68, 230, 255, 0.1);
+
+// For the Depth Chart interface
+$light-chart-ChartBackgroundColor: #ffffff;
+$light-chart-xAxisGridLineColor: rgba(0,0,0,.05);
+$light-chart-xAxisLineColor: rgba(0,0,0,.07);
+$light-chart-xAxisTickColor: rgba(0,0,0,.07);
+$light-chart-xAxisLabelsColor: #7583a1;
+$light-chart-yAxisGridLineColor: rgba(0,0,0,.08);
+$light-chart-yAxisLineColor: rgba(0,0,0,.2);
+$light-chart-yAxisTickColor: rgba(0,0,0,.2);
+$light-chart-yAxisLabelsColor: #7583a1;
+$light-chart-tooltipBackgroundColor: rgba(0,0,0,.1);
+$light-chart-tooltipBorderColor: rgba(0,0,0,.08);
+$light-chart-tooltipColor: #7583A1;
+$light-chart-legendItemStyleColor: #5b6577;
+$light-chart-legendItemHoverStyleColor: #7583a1;
+$light-chart-legendItemHiddenStyleColor: #7e7e7e;
+$light-chart-seriesBuyColor: #44e6ff;
+$light-chart-seriesSellColor: #ff3856;
+
+// For the account interface
+$account-fontFamily: 'Poppins';
+
+
+// Other things
+$cce-notification-default-1: #8c8c8c;
+$cce-notification-default-2: #252525;
+
+$cce-notification-warn-1: #dd842e;
+$cce-notification-warn-2: #824e1c;
+
+$cce-notification-error-1: #cf411d;
+$cce-notification-error-2: #8e2c14;
+
+$cce-notification-success-1: #44e6ff;
+$cce-notification-success-2: #3899af;

@@ -1,0 +1,94 @@
+{
+  "admins": [],
+  "assetsBucket": "staging-2-traderone.chaincreator.exchange",
+  "code": "TRON",
+  "commissionPartner": 60,
+  "commissionPlatform": 40,
+  "commissionTrade": {
+    "makerFee": 0.1,
+    "takerFee": 0.25
+  },
+  "defaultMarketPair": "BTC-USDC",
+  "defaultPairs": [
+    "BTC-USDC",
+    "ETH-USDC",
+    "XRP-USDC",
+    "LTC-USDC",
+    "ETH-BTC",
+    "LTC-BTC"
+  ],
+  "domain": "staging-2-traderone.chaincreator.exchange",
+  "emailTemplateSettings": {
+    "confirmNewIpUrl": "http://{{domain}}/#/emails/cip/{{confirmNewIPToken}}",
+    "confirmPaymentUrl": "http://{{domain}}/#/emails/cpmt/{{confirmPaymentToken}}",
+    "confirmUrl": "http://{{domain}}/#/emails/ca/{{confirmAccountToken}}",
+    "domain": "staging-2-traderone.chaincreator.exchange",
+    "mailerFromEmail": "noreply@traderone.exchange",
+    "name": "TradeOne.Exchange",
+    "recoverPasswordUrl": "http://{{domain}}/#/emails/rp/{{recoverPasswordToken}}",
+    "templatePath": "exchange"
+  },
+  "partnerUid": "e54d7e1e-4be9-4db4-b495-1adcb0a226b2",
+  "projectId": "ed87f33e-884e-11e9-bc42-526af7764f64",
+  "projectType": "cce-whitelabel",
+  "shortName": "TraderOne",
+  "themeName": "traderone",
+  "themeSettings": {
+    "bgUrlAuth": {
+      "backgroundImage": "url(/static/img/themes/cce/blur-auth-bg.jpg)"
+    },
+    "carouselItems": [],
+    "customLogin": "#/login",
+    "faviconUrl": "/static/img/themes/traderone/logo-exchange-favicon.png",
+    "googleAuthName": "TradeOne.Exchange",
+    "logoHref": "https://TradeOne.exchange/",
+    "logoUrlAccount": "/static/img/themes/traderone/logo-exchange-on-dark.svg",
+    "logoUrlAuth": "/static/img/themes/traderone/logo-exchange-on-dark.svg",
+    "logoUrlPartner": "https://s3-eu-west-1.amazonaws.com/staging-trade.chaincreator.exchange/static/img/themes/cce/logo-exchange-symbol-on-dark.svg",
+    "logoUrlTrade": "/static/img/themes/traderone/logo-exchange-on-dark.svg",
+    "navItems": [
+      {
+        "icon": "fas fa-tachometer-alt",
+        "name": "Dashboard",
+        "to": "account.dashboard"
+      },
+      {
+        "activeTabs": [
+          "account.deposits",
+          "account.withdrawals"
+        ],
+        "icon": "fas fa-wallet",
+        "name": "Wallet",
+        "to": "account.wallet"
+      },
+      {
+        "activeTabs": [
+          "account.tradeHistory"
+        ],
+        "icon": "fas fa-exchange-alt",
+        "name": "Orders",
+        "to": "account.openOrders"
+      },
+      {
+        "icon": "fas fa-sliders-h",
+        "name": "Settings",
+        "to": "account.settings"
+      },
+      {
+        "icon": "fas fa-link",
+        "name": "Referral",
+        "to": "account.referral"
+      }
+    ],
+    "navStaticPages": [],
+    "showAllApps": true,
+    "themeAnalyticsGlobal": "",
+    "themeMode": true,
+    "tradeTabsOrder": [
+      "limit",
+      "market",
+      "stop"
+    ]
+  },
+  "title": "TraderOne | Cryptocurrency Exchange"
+}

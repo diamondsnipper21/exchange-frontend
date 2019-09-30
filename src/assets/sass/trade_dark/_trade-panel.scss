@@ -1,0 +1,22 @@
+/* ----------------------
+  TRADE PANEL
+---------------------- */
+.cce-trade__panel {
+  background-color: $dark-trade-colorContentBg;
+}
+
+.cce-trade__panel-title {
+  background: $dark-trade-colorHeaderBg;
+  border-bottom: 1px solid $dark-trade-colorDivider;
+  color: $dark-trade-colorHeaderText;
+}
+
+.cce-trade__panel-orders-stats {
+  background: $dark-trade-colorHeaderBg;
+  border-top: 1px solid $dark-trade-colorDivider;
+  border-bottom: 1px solid $dark-trade-colorDivider;
+}
+
+.cce-trade__panel-orders-stats--no-arrow {
+  color: $dark-trade-colorContentBg !important;
+}

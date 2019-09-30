@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>Account activation on ChainCreator.exchange</title>
+    <style>
+	    	html, body {
+		    	margin: auto;
+				width: 100%;
+				height: 100%;
+		    }
+		    body {
+				background-color: #f1f1f1;
+		    }
+			table, h1, h2, h3, p, a {
+				font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+				color: #293b4e;
+				font-weight: 200;
+			}
+			h1 {
+				font-size:20px;
+				margin-top: 0px;
+			}
+			h1 span {
+				color:rgb(255, 125, 0);
+				font-weight:bold;
+			}
+			h2 {
+				font-size:16px;
+			}
+			p {
+				font-size: 14px;
+				margin: 0;
+			}
+			a {
+				font-size:12px;
+				text-decoration:none;
+				-webkit-transition: all 0.3s; /* Safari */
+			    transition: all 0.3s;
+			    color: rgb(255, 125, 0);
+			}
+			a:hover {
+			    color: rgb(232, 114, 0);
+			}
+			strong {
+				font-weight:bold;
+			}
+			table {
+				background-color:rgba(255, 255, 255, 0);
+			}
+			table tbody {
+				
+			}
+			.btn {
+				background-color: rgb(255, 125, 0);
+			    border: 0;
+			    outline: none;
+			    font-size: 16px;
+			    font-weight: 400;
+			    display: inline-flex;
+			    color: #fff;
+			    margin-right: 15px;
+			    -webkit-transition: all 0.2s;
+			    transition: all 0.2s;
+			    padding: 7px 10px;
+			    border-radius: 3px;
+			}
+			.btn:hover {
+				background-color: rgb(232, 114, 0);
+				color: #fff;
+			}
+			.mic {
+				font-size: 12px;
+				color: #999;
+			}
+	</style>
+</head>
+	
+<body style="background-color:#f1f1f1;">
+	
+	<div style="max-width: 700px;
+				height: auto;
+				margin: 50px auto;
+				top: 20%;
+				left: 50%;
+				display: block;
+				padding: 0;
+				box-sizing: border-box;">
+		<table width="100%" cellpadding="0" style="background-color: rgba(255, 255, 255, 0); font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; color: #293b4e; font-weight: 200;">
+			 <thead style="background-color: rgba(255, 255, 255, 0)">
+			  <tr>
+				 <th valign="middle" align="left"><img style="max-width: 250px; margin-left:30px; margin-bottom:30px;" src="https://s3-eu-west-1.amazonaws.com/cce-utils/emails/dark/logo-cc-exchange-email.png" alt="Chaincreator - Exchange - Logo"></th>
+			  </tr>
+			 </thead>
+
+			 <tbody>
+			  <tr>
+				 <td valign="middle" align="left">
+					 <div style="padding: 30px;
+								 background-color: rgba(255, 255, 255, 1);
+								 box-sizing: border-box;
+								 border-radius: 5px;
+								 border: 1px solid #e8e8e8;">
+						  <h1 style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;
+								 color: #293b4e;
+								 font-size:20px;
+							     margin-top: 0px;
+								 font-weight: 200;">The system has detected a successful account log in from a new IP address: <span style="color:rgb(255, 125, 0);	font-weight:bold;">{{ip}}</span></h1>
+						  {{#if antiPhishingEnabled}}
+						  <p style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;
+						  color: #293b4e;
+						  margin: 0;
+						  font-size: 14px;">Anti-phishing {{antiPhishingCode}}</p>
+						  {{/if}}
+						  <br>
+
+						  <h2 style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;
+									 color: #293b4e;
+									 margin-top: 0px;
+									 font-size:16px;
+									 font-weight: 200;">Please follow the link bellow to unlock your account:</h2>
+
+						  <p style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;
+												color: #999;
+												margin: 0;
+												font-size: 14px;">
+							 <a class="btn"
+								href="{{siteUrl}}/#/emails/cip/{{confirmNewIPToken}}"
+								style="	background-color: rgb(255, 125, 0);
+										border: 0;
+										outline: none;
+										font-size: 16px;
+										font-weight: 400;
+										display: inline-flex;
+										color: #fff;
+										margin-right: 15px;
+									    margin-top: 0px;
+										-webkit-transition: all 0.2s;
+										transition: all 0.2s;
+										padding: 7px 10px;
+										border-radius: 3px;
+									    text-decoration: none;"
+								onMouseOver="this.style.backgroundColor='rgb(232, 114, 0)', this.style.color='#fff'"
+								onMouseOut="this.style.backgroundColor='rgb(255, 125, 0)', this.style.color='#fff'">Validate account</a></p>
+						  <br>
+
+						  <p class="mic" style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;
+												color: #999;
+												margin: 0;
+												font-size: 12px;">If you can't confirm by clicking the button above, please copy the address below to the browser address bar to confirm:</p>
+						  <p class="mic" style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;
+												color: #999;
+												margin: 0;
+												font-size: 14px;">
+							  <a href="{{siteUrl}}/#/emails/cip/{{confirmNewIPToken}}"
+								 style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;
+										font-size:12px;
+										text-decoration:none;
+										-webkit-transition: all 0.3s; /* Safari */
+										transition: all 0.3s;
+										color: rgb(255, 125, 0);"
+								 onMouseOver="this.style.color='rgb(232, 114, 0)'"
+								 onMouseOut="this.style.color='rgb(255, 125, 0)'"
+								 >{{siteUrl}}/#/emails/cip/{{confirmNewIPToken}}</a>
+						  </p>
+						  <br>
+
+						  <p style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;
+									color: #293b4e;
+									margin: 30px 0 0 0;
+									font-size: 14px;">Thank you,<br> The ChainCreator Team</p>
+					 </div>
+				  </td>
+			  </tr>
+			 </tbody>
+		</table>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+/* ----------------------
+  CONTENT
+---------------------- */
+.cce-account__content {
+  // background-color: $simple-white-0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .user-content {
+    width: 100%;
+  }
+  .title {
+    margin: 21px 0 25px 0;
+    color: $light-exchange-account-title;
+    font-size: 30px!important;
+    font-weight: 600;
+  }
+  .sub-title {
+    margin: 30px 0 15px 0;
+    color: $exchange-gray-0;
+    font-size: 20px!important;
+  }
+  .banner {
+    display: block;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .input-group {
+    .input-group__details:before {
+      background-color: $exchange-green-2 !important;
+    }
+    .icon {
+      color: $exchange-green-2 !important;
+    }
+  }
+  .input-group input {
+    color: $exchange-green-2;
+  }
+  .input-group:not(.input-group--error) label {
+    color: $exchange-gray-0;
+  }
+
+  /* USER SETTINGS */
+  .user-settings {
+    .flex {
+      .card {
+        height:100% !important;
+        box-shadow: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: baseline;
+        border: 1px solid $transparent-black-5;
+
+        h3 {
+          color: $light-exchange-primary-1;
+        }
+
+        .card__actions {
+          padding: 0 15px 20px 15px;
+
+          .cce-security-update-link {
+            color: $light-exchange-btn-color-1;
+            text-decoration: none;
+            border: 1px solid $light-exchange-btn-border-1 !important;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .settings {
+    .expansion-panel {
+      .expansion-panel__container {
+        background-color: $exchange-gray--1 !important;
+        .card__text {
+          background-color: $simple-white-0;
+        }
+        .btn {
+          color: $light-exchange-btn-color-1;
+          text-decoration: none;
+          background-color: $light-exchange-btn-bg-1;
+          margin-left: 0;
+          border: 1px solid $light-exchange-btn-border-1 !important;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  /* VOUCHERS */
+  .vouchers {
+    .gold-title {
+      background-color: $simple-yellow-1;
+      padding: 10px;
+      color:$simple-white-0;
+      text-align: center;
+      font-size: 20px;
+    }
+    .ticket-number {
+
+      position: relative;
+      @include fullSize;
+
+      &.golden {
+        background-color: $simple-yellow-1;
+      }
+      &.green {
+        background-color: $simple-green-1;
+      }
+
+      .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include flexCenterCenter;
+        border: 1px solid $transparent-white-4;
+        border-radius: 5px;
+
+        i {
+          color: $simple-white-0;
+          font-size: 15px;
+        }
+        .card__text {
+          width: auto;
+          margin: 0 20px;
+          color: $simple-white-0;
+        }
+      }
+
+      .ticket-corners-top {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+        &:before {
+          content: " ";
+          position: absolute;
+          left: 0;
+          @include size(30px);
+          margin: -15px;
+          border-radius: 50%;
+          background: $simple-white-0;
+        }
+        &:after {
+          content: " ";
+          position: absolute;
+          right: 0;
+          @include size(30px);
+          margin: -15px;
+          border-radius: 50%;
+          background: $simple-white-0;
+        }
+      }
+      .ticket-corners-bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        &:before {
+          content: " ";
+          position: absolute;
+          left: 0;
+          @include size(30px);
+          margin: -15px;
+          border-radius: 50%;
+          background: $simple-white-0;
+        }
+        &:after {
+          content: " ";
+          position: absolute;
+          right: 0;
+          @include size(30px);
+          margin: -15px;
+          border-radius: 50%;
+          background: $simple-white-0;
+        }
+      }
+    }
+  }
+
+  /* REFERRAL */
+  .referral__layout {
+    .panel-link {
+      background: $exchange-green-2;
+      color: $simple-white-1;
+      font-size: 12px;
+      .referral-id {
+        @include flexAlignCenter;
+        justify-content: flex-start;
+      }
+      .referral-link {
+        @include flexAlignCenter;
+        justify-content: flex-end;
+        a {
+          font-size: 18px;
+          color: $simple-white-1;
+          margin-left: 10px;
+        }
+      }
+      .referral-share {
+        @include flexAlignCenter;
+        justify-content: flex-start;
+        margin-top: -20px;
+        flex-wrap: wrap;
+        hr {
+          border: 1px solid $transparent-white-4;
+          opacity: 0.2;
+          align-self: flex-start;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        i {
+          font-size: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+    .panel-chart {
+      .highcharts-container {
+        width: 100% !important;
+      }
+    }
+    // Referral
+    // TODO: move to separate scss file for the referral page
+    .cce-referral__table {
+      table {
+        background: transparent !important;
+      }
+
+
+      table.table thead tr {
+        height: 46px;
+      }
+
+      thead {
+        tr {
+          border: none !important;
+        }
+
+        th {
+          font-size: 15px !important;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          border: none !important;
+        }
+
+        td {
+          font-size: 14px !important;
+        }
+      }
+
+      table tbody tr td:last-child {
+        padding: 0;
+      }
+
+      tr:nth-child(4n+3){
+        td {
+          background: rgba(155, 174, 211, 0.08) !important;
+        }
+      }
+
+      tr:nth-child(2n){
+        td {
+          background: rgba(155, 174, 211, 0.08) !important;
+        }
+      }
+    }
+
+    .ref__field {
+      font-weight:bold;
+      width:330px;
+    }
+    .referral__layout > * {
+      @include fontFamilyTrade;
+    }
+    .share__section {
+      border-top: 1px solid $simple-white-2;
+    }
+    .p__margin {
+      margin-bottom: 2px;
+    }
+    .clip-img {
+      width: 20px;
+    }
+    .regs-stat > strong {
+      margin-top: 20px;
+    }
+    .align__center {
+      text-align: center;
+    }
+    .circle-stat {
+      @include size(100px);
+      border-radius: 100%;
+      text-align: center;
+      padding-top: 36px;
+      font-size: 16px;
+      margin: auto;
+    }
+
+    .clicks-stat {
+      border: 2px solid $exchange-green-2;
+      color: $exchange-green-2;
+    }
+
+    .regs-stat {
+      border: 2px solid $simple-blue-1;
+      color: $simple-blue-1;
+    }
+
+    .trades-stat {
+      border: 2px solid $simple-orange-1;
+      color: $simple-orange-1;
+    }
+
+    .total-stat {
+      border: 2px solid $simple-yellow-1;
+      color: $simple-yellow-1;
+    }
+
+    .clicks-text {
+      color: $exchange-green-2;
+    }
+
+    .regs-text {
+      color: $simple-blue-1;
+    }
+
+    .trades-text {
+      color: $simple-orange-1;
+    }
+
+    .total-text {
+      color: $simple-yellow-1;
+    }
+
+    .comission-text {
+      color: $simple-blue-1;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .stat-text{
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  }
+}

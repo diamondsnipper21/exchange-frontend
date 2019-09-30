@@ -1,0 +1,200 @@
+/* ------------------------------------------------------------------
+
+   LIGHT THEME
+
+   ------------------------------------------------------------------ */
+.theme--light {
+  
+  @import './main';
+  @import './notifications';
+  @import './navigation';
+  @import './toolbar';
+  @import './content';
+  @import './actions';
+  @import './withdrawal-form';
+  @import './table';
+  @import './admin-panel';
+  @import './admin-table';
+  @import './admin-overview';
+
+  .btn-exchange {
+    color: $light-exchange-btn-color-1;
+    text-decoration: none;
+    background-color: $light-exchange-btn-bg-1;
+    border: 1px solid $light-exchange-btn-border-1 !important;
+    box-shadow: none;
+  }
+
+  .title-exchange {
+    color: $exchange-green-2 !important;
+  }
+
+  .cce-wallets__header {
+    background: $light-trade-colorHeaderBg;
+    color: $light-trade-colorHeaderText;
+  }
+
+  .cce-wallets__header__text {
+    color: $light-trade-colorHeaderText !important;
+  }
+
+  .cce-wallets__table-row {
+    background: $simple-white-0;
+  }
+  
+  .cce-wallets__button {
+    background: $light-trade-colorHeaderBg !important;
+    color: $light-trade-colorHeaderText;
+  }
+
+  .cce-wallet-zero-balance__header {
+    background: $light-trade-colorHeaderBg;
+    border-bottom: 1px solid $light-trade-colorDivider;
+    color: $light-trade-colorHeaderText;
+  }
+  
+  .cce-wallet-zero-balance__content {
+    background: $simple-white-0;
+  }
+
+  .cce-wallet-currency {
+    background: $light-trade-colorHeaderBg;
+    color: $light-trade-colorHeaderText;
+    box-shadow: 1px 1px 0.5rem rgba(0,0,0,0.1) inset;
+  }
+
+  .cce-wallets-modal__tabs {
+    position: relative;
+  
+    .tabs__container {
+      height: 36px;
+      background-color: $light-trade-colorHeaderBg;
+    }
+  
+    .tabs__bar {
+      background-color: $light-trade-colorHeaderBg;
+    }
+  
+    .accent {
+      background-color: $light-trade-colorActive !important;
+      display: none;
+      height: 1px;
+    }
+  
+    .tabs__item {
+      text-transform: none;
+      color: $light-trade-colorHeaderText;
+      @include fontFamilyTrade;
+    }
+  
+    .tabs__item--active {
+      background: $light-trade-color-active-ContentBg;
+    }
+  
+    .tabs__item:not(.tabs__item--active) {
+      opacity: 0.9 !important;
+    }
+    .tabs__item.tabs__item--disabled {
+      opacity: 0.5 !important;
+    }
+  }
+
+  .cce-wallets-modal__close-btn {
+    margin-right: 10px;
+    color: $light-trade-colorHeaderText;
+    cursor: pointer;
+  }
+
+  .cce-wallets-modal__content {
+    background: $light-trade-colorTradingBg;
+  }
+
+  .cce-account__select-coin-bar-item--wide {
+    background: $light-trade-colorMainBg;
+    box-shadow: 1px 1px 0.5rem rgba(0,0,0,0.1) inset;
+  }
+
+  .cce-deposit-address {
+    background: $light-trade-colorMainBg;
+  }
+
+  .cce-withdraw-address {
+    background: $light-trade-colorMainBg;
+
+    .input-group input {
+      color: $exchange-gray-2;
+    }
+  }
+
+  .cce-orders__tabs {
+    position: relative;
+    width: 100%;
+  
+    .tabs__container {
+      height: 36px;
+      background-color: $light-trade-colorHeaderBg;
+    }
+  
+    .tabs__bar {
+      background-color: $light-trade-colorHeaderBg;
+    }
+  
+    .accent {
+      background-color: $light-trade-colorActive !important;
+      display: none;
+      height: 1px;
+    }
+  
+    .tabs__item {
+      text-transform: none;
+      color: $light-trade-colorHeaderText;
+      @include fontFamilyTrade;
+    }
+  
+    .tabs__item--active {
+      background: $light-trade-color-active-ContentBg;
+    }
+  
+    .tabs__item:not(.tabs__item--active) {
+      opacity: 0.9 !important;
+    }
+    .tabs__item.tabs__item--disabled {
+      opacity: 0.5 !important;
+    }
+  }
+
+  .cce-orders-header-icon {
+    color: $light-trade-colorHeaderText;
+  }
+
+  .cce-timeline-controls-item {
+    color: $light-trade-colorHeaderText;
+  }
+
+  .cce-pair-selector-content {
+    background: $light-trade-colorDark;
+  }
+
+  .cce-pair-selector-tabs {
+    // background: $light-trade-colorHeaderBg;
+    .tabs__bar {
+      background: $light-trade-colorDark;
+      border-bottom: 1px solid $light-trade-colorDivider;
+    }
+  
+    .tabs__item--active {
+      background: $light-trade-colorContentBg;
+      color: $light-trade-colorActive;
+    }
+  }
+
+  .cce-orders-total {
+    background: $light-trade-colorContentBg;
+
+    &__content {
+      border-top: 1px solid $light-trade-colorDivider;
+    }
+  }
+}
+
+

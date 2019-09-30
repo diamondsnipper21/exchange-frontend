@@ -1,0 +1,54 @@
+/* ------------------------------------------------------------------
+
+   DARK LIGHT
+
+------------------------------------------------------------------ */
+.theme--light {
+  background-color: $light-trade-colorTradingBg !important;
+
+  @import './main';
+  @import './trade-tab';
+  @import './trade-panel';
+  @import './trade-table';
+  @import './trade-stats';
+  @import './trade-favorites';
+  @import './trade-form';
+  @import './trade-history';
+  @import './trade-market';
+  @import './trade-charts';
+  @import './trade-mobile-version';
+
+  .cce-bg-fill {
+    background-color: $light-trade-colorDivider;
+  }
+
+  .text-subheader-color {
+    color: $light-trade-colorSubHeaderText;
+  }
+
+  .menu__content {
+    background: transparent;
+    scrollbar-width: thin;
+    scrollbar-color:  $light-trade-colorBgActive $light-trade-colorDivider;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $light-trade-colorDivider;
+      border-left: 1px solid $light-trade-colorBgActive;
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 6px;
+      background: rgba(#00b8a7, 0.2);
+
+      &:hover {
+        background: rgba(#00b8a7, 0.5);
+      }
+    }
+  }
+}

@@ -1,0 +1,254 @@
+/* ----------------------
+   TRADE TABLE
+---------------------- */
+.cce-trade__table {
+  position: relative;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cce-trade__table__container {
+  height: 0;
+  @include flexColumn;
+  flex: 1 0 auto;
+  // overflow: auto;
+  @include scrollBarLight;
+}
+.cce-trade__table__container__table {
+  min-height: 500px;
+  height: 100%;
+  max-height: 1000px;
+  @include flexColumn;
+  position: relative;
+  flex: 1;
+}
+
+
+.cce-trade__table__container__table--flex-end {
+  justify-content: flex-end;
+}
+
+.cce-trade__placeholder {
+  display: flex;
+  height: 0;
+  flex: 1;
+}
+
+.cce-trade__table-content {
+  @include flexColumn;
+  height: 100%;
+}
+
+.cce-trade__table-header {
+  overflow: hidden;
+  padding: 1px 0;
+  border-bottom: 1px solid $light-trade-colorDivider;
+  margin: 0 0 1px 0;
+  @include fontFamilyTrade;
+}
+
+.cce-trade__table-table {
+  width: auto;
+  min-width: 100%;
+  border-spacing: 0;
+  padding: 0 3px;
+  background: transparent;
+}
+
+.cce-trade__table-table--no-padding-left {
+  padding-left: 0;
+}
+
+.cce-trade__table-body {
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 0;
+  height: 0;
+}
+
+.cce-trade__table-body--flex {
+  display: flex;
+}
+
+.cce-trade__table-body--with-scrollbar {
+  @include scrollBarLight;
+  // background: $dark-trade-colorContentBg;
+}
+
+.cce-trade__table-th  {
+  color: $light-trade-colorSubHeaderText;
+  font-weight: 400;
+  text-align: left;
+  padding: 2px 10px;
+  font-size: 13px;
+  width: 1%;
+}
+
+.cce-trade__table-th--no-padding-right {
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.cce-trade__table-tr {
+  transition: all .3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $light-trade-colorBgActive;
+
+    .cce-trade__table-activate {
+      color: $light-trade-colorActive;
+    }
+  }
+}
+
+.cce-trade__table-tr--no-border {
+  border: 0 !important;
+  background-color: $simple-white-0 !important;
+
+  &:hover {
+    background-color: $transparent-black-6 !important;
+  }
+}
+
+.cce-trade__table-tr--no-pointer {
+  cursor: default;
+}
+
+.cce-trade__table-td {
+  font-weight: 400;
+  text-align: left;
+  padding: 1px 10px;
+  font-size: 12px;
+  height: auto;
+  border: none;
+  word-break: break-all;
+
+  .cce-color__low,
+  .cce-color__high {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.cce-trade__table-td--tooltip {
+  @include flexRow;
+  flex-wrap: nowrap;
+}
+
+.cce-trade__table--fixed {
+  table {
+    background: transparent !important;
+    table-layout: fixed;
+  }
+
+  thead {
+    tr {
+      display: block;
+      position: relative;
+    }
+    th {
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  tbody {
+    display: block;
+    overflow: auto;
+
+    td {
+      height: auto !important;
+    }
+
+    tr:not(:last-child) {
+      border: none !important;
+    }
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 6px;
+      margin: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 6px;
+      background: rgba(170, 170, 170, 0.15);
+    }
+  }
+}
+
+.cce-trade__table-bar-wrapper {
+  position: relative;
+  text-align: right;
+}
+
+.cce-trade__table-bar-ask {
+  background: $light-trade-colorBarAsk;
+}
+
+.cce-trade__table-bar-bid {
+  background: $light-trade-colorBarBid;
+}
+
+.cce-trade__datatable {
+  .table {
+    th {
+      color: $light-trade-colorSubHeaderText !important;
+      font-size: 13px !important;
+      @include fontFamilyTrade;
+
+      .icon {
+        color: $light-trade-colorSubHeaderText !important;
+      }
+    }
+
+    tr:not(.datatable__progress) th {
+      padding: 7px 7px !important;
+    }
+
+    tr {
+      height: auto;
+    }
+
+    thead tr:first-child {
+      border-color: $light-trade-colorDivider;
+    }
+
+    tbody {
+      td {
+        padding: 7px 7px !important;
+        height: auto;
+        &:nth-child(1) {
+          width: 65px;
+        }
+      }
+
+      td.low-padding {
+        padding: 1px 7px !important;
+      }
+
+      tr {
+        height: auto;
+        transition: all .3s !important;
+        background-color: $transparent-black-6;
+
+        &:hover {
+          background-color: $light-trade-colorBgActive;
+        }
+      }
+
+      tr:not(:last-child) {
+        border-bottom: 1px solid $light-trade-colorDivider;
+      }
+    }
+  }
+}

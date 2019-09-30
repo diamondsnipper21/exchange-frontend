@@ -1,0 +1,26 @@
+.cce-timeline-controls {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  .cce-timeline-controls-item {
+    width: auto;
+    margin: 0 4px;
+    padding: 0 8px;
+    height: 20px;
+    @include fontFamilyTrade;
+
+    &,
+    .btn__content:before {
+      border-radius: 0 !important;
+    }
+  }
+
+  .cce-timeline-controls-item--active {
+    .btn__content {
+      &:before {
+        background-color: currentColor;
+      }
+    }
+  }
+}

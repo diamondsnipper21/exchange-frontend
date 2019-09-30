@@ -1,0 +1,166 @@
+/* ----------------------
+  TRADE FORM
+---------------------- */
+.cce-trade__trade-form {
+  font-size: 13px;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+.cce-trade__trade-form-row {
+  margin: 6px 0;
+
+  .flex {
+    align-items: center;
+  }
+}
+
+.cce-trade__trade-form-toggle {
+  width: 100%;
+  margin: 0 0 5px 0;
+}
+
+.cce-trade__trade-form-space {
+  height: 26px;
+}
+
+.cce-trade__trade-form-action {
+  padding: 3px 0 0 0;;
+}
+
+.cce-trade__trade-form-action-ask,
+.cce-trade__trade-form-action-bid {
+  margin-top: 0;
+}
+
+.cce-trade__trade-form-name,
+.cce-trade__trade-form-balance-label,
+.cce-trade__trade-form-total-label,
+.cce-trade__trade-form-volume-label,
+.cce-trade__trade-form-total-symbol
+{
+  @include fontFamilyTrade;
+}
+
+.cce-trade__trade-form-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cce-trade__trade-form-balance {
+  text-align: right;
+}
+
+.cce-trade__trade-form__deposit-icon {
+  font-size: 15px;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.cce-trade__trade-form-price-label {
+  line-height: 26px;
+  height: 26px;
+}
+
+.cce-trade__trade-form-total {
+  height: 26px;
+  width: 100%;
+  padding: 4px 7px;
+}
+
+.cce-trade__trade-form-total-label {
+  font-size: 14px;
+}
+
+.cce-trade__trade-form-volume-btn {
+  min-width: auto;
+  font-size: 12px;
+  height: 26px;
+  margin: 0 3px 0 0;
+}
+
+.cce-trade__trade-form-hide {
+  margin: 6px 7px 0 0;
+  cursor: pointer;
+  position: relative;
+}
+
+// trade form input
+.cce-trade__trade-form-control {
+  position: relative;
+  height: 26px;
+}
+
+.cce-trade__trade-form-control--disabled {
+  @include positionAbsoluteZero;
+}
+
+.cce-trade__trade-form-control-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 26px;
+  width: 100%;
+  padding: 0 7px;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.cce-trade__trade-form-control-currency {
+  position: absolute;
+  top: 1px;
+  right: 25px;
+  height: 24px;
+  padding: 3px 5px;
+}
+
+.cce-trade__trade-form-control-arrows {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22px;
+  height: 100%;
+  border-radius: 0;
+  transition: opacity 0.24s linear 0.1s;
+}
+
+.cce-trade__trade-form-control-arrows-up,
+.cce-trade__trade-form-control-arrows-down {
+  text-align: center;
+  line-height: 0;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.1s linear;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cce-trade__trade-form-control-arrows-down {
+  top: -1px;
+}
+
+.cce-trade__trade-form-control-arrows-down-inner,
+.cce-trade__trade-form-control-arrows-up-inner {
+  position: relative;
+}
+
+.cce-trade__trade-form-control-arrows-up-inner {
+  top: -1px;
+}
+
+.cce-trade__trade-form-control-arrows-down-inner {
+  top: -2px;
+}

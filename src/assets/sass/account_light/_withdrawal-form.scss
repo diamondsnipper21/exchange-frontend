@@ -1,0 +1,17 @@
+/* ----------------------
+  WITHDRAWAL FORM
+---------------------- */
+.cce-account__withdrawal-form {
+  max-width: 400px;
+  padding: 15px 25px;
+  background: $exchange-gray--1;
+  .btn {
+    color: $light-exchange-btn-color-1;
+    text-decoration: none;
+    background-color: $light-exchange-btn-bg-1;
+    margin-left: 0;
+    margin-top: 25px;
+    border: 1px solid $light-exchange-btn-border-1 !important;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,33 @@
+/* ----------------------
+  TRADE CHARTS
+---------------------- */
+.cce-trade__charts-toggle {
+  display: none;
+};
+
+.cce-trade__depth-chart {
+  border-top: 8px solid $light-trade-colorDivider;
+  margin-bottom: 5px;
+}
+
+.cce-trade__depth-chart-title {
+  display: none;
+}
+
+.cce-trade__trading-view,
+.cce-trade__highcharts {
+  @include positionAbsoluteZero;
+  background: $light-trade-colorContentBg;
+}
+
+.cce-trade__trading-view {
+  iframe {
+    background: $light-trade-colorContentBg;
+  }
+}
+
+.cce-trade__highcharts {
+  .highcharts-legend-item {
+    @include fontFamilyTrade;
+  }
+}

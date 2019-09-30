@@ -1,0 +1,97 @@
+/* ----------------------
+  TRADE FORM DARK THEME RELATED STYLES
+---------------------- */
+.cce-trade__trade-form-toggle-ask,
+.cce-trade__trade-form-toggle-bid {
+  color: $dark-trade-colorBtnText !important;
+}
+
+.cce-trade__trade-form-toggle-ask {
+  background-color: $dark-trade-colorHigh;
+  border-color: $dark-trade-colorHigh;
+}
+
+.cce-trade__trade-form-toggle-bid {
+  background-color: $dark-trade-colorLow;
+  border-color: $dark-trade-colorLow;
+}
+
+.cce-trade__trade-form-action-ask {
+  background-color: $dark-trade-colorLow;
+  border-color: $dark-trade-colorLow;
+}
+
+.cce-trade__trade-form-action-bid {
+  background-color: $dark-trade-colorHigh;
+  border-color: $dark-trade-colorHigh;
+}
+
+.cce-trade__trade-form-name {
+  color: $dark-trade-colorHeaderText;
+}
+
+.cce-trade__trade-form-total {
+  background: $dark-trade-colorInputBg;
+}
+
+.cce-trade__trade-form-volume-btn {
+  background: $dark-trade-colorInputBg;
+  // &.btn--disabled {
+  //   &.highlight {
+  //     .btn__content {
+  //       background-color: initial;
+  //     }
+  //   }
+  // }
+  // &.highlight {
+  //   .btn__content {
+  //     background-color: $exchange-gray-5;
+  //   }
+  // }
+}
+
+.cce-trade__trade-form-volume .theme--dark.icon {
+  background-color: $dark-trade-colorContentBg ;
+}
+
+// trade form input
+.cce-trade__trade-form-control {
+  position: relative;
+  height: 26px;
+  background: $dark-trade-colorInputBg;
+}
+
+.cce-trade__trade-form-control--disabled {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.cce-trade__trade-form-control-input--error {
+  border: 1px solid rgba(207, 65, 29, 0.47);
+}
+
+.cce-trade__trade-form-control-currency {
+  color: $dark-trade-colorSubHeaderText;
+  background-color: $dark-trade-colorInputBg;
+}
+
+.cce-trade__trade-form-control-arrows {
+  border-left: 1px solid $dark-trade-colorContentBg;
+  background: $dark-trade-colorInputBg;
+}
+
+.cce-trade__trade-form-control-arrows-up,
+.cce-trade__trade-form-control-arrows-down {
+  &:hover {
+    .icon {
+      color: $dark-trade-colorActive;
+    }
+  }
+}
+
+.cce-trade__trade-form-control-arrows-down {
+  border-top: 1px solid $dark-trade-colorContentBg;
+}
+
+.cce-overlay {
+  background: $overlay-dark-bg;
+}

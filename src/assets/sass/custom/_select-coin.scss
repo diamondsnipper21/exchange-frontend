@@ -1,0 +1,67 @@
+/* ----------------------
+  SELECT COIN
+---------------------- */
+.cce-account__select-coin-bar {
+  margin: 0 0 15px 0;
+}
+
+.cce-account__select-coin-bar-item {
+  display: inline-flex;
+  width: 200px;
+  margin-top: -10px;
+  @include media(sm) {
+    width: 49%;
+  }
+  .input-group__details:before {
+    background-color: $exchange-green-transparent-0 !important;
+  }
+}
+
+.cce-account__select-coin-bar-item--wide {
+  width: 100%;
+  border-radius: 5px;
+
+  &.input-group {
+    padding: 10px;
+  }
+
+  &.input-group--hide-details .input-group__details {
+    display: none;
+  }
+}
+
+.cce-account__select-coin-bar-sep {
+  display: inline-flex;
+  font-size: 16px;
+  margin: 0 15px;
+  position: relative;
+  top: 5px;
+}
+
+.cce-account__select-coin-icon-img {
+  @include size(24px);
+  float: left;
+  margin-right: 5px;
+  position: relative;
+  // top: -2px;
+}
+
+.cce-account__select-coin-abbr {
+  text-transform: uppercase;
+}
+
+.cce-account__select-coin-name {
+  opacity: 0.55;
+}
+
+.cce-account__select-coin-selected {
+  .cce-account__select-coin-icon-img {
+    @include size(18px);
+    // top: 1px;
+  }
+}
+
+.cce-account__select-coin-bar-btn {
+  float: right;
+  margin-top: 5px;
+}

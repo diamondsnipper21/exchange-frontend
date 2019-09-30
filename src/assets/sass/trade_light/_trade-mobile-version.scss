@@ -1,0 +1,115 @@
+/* ----------------------
+  TRADE MOBILE VER.
+---------------------- */
+// &.cce-trade--mobile,
+.cce-trade--mobile {
+  .cce-trade__logo {
+    background-image: url($light-img-trade-logo-symbol) !important;
+  }
+
+    .cce-trade__history,
+    .cce-trade__trades,
+    .cce-trade__orders-trade {
+      max-width: 100%;
+      min-width: auto;
+    }
+
+    .cce-trade__user-orders {
+      max-height: 100%;
+    }
+
+  .cce-trade__market {
+    min-width: 151px;
+    // max-width: 151px;
+  }
+
+  .cce-trade__market-content {
+    .cce-trade__table {
+      .table {
+        tbody {
+          .datatable__action {
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+  }
+
+.toolbar {
+  max-height: 50px;
+  background-color: $light-trade-colorMainBg;
+  .toolbar__content {
+    .toolbar__items {
+      height: auto !important;
+    }
+    max-height: 50px;
+    .cce-trade__bar-icons {
+      @include media(md) {
+        margin-right: 10px !important;
+      }
+    }
+  }
+}
+
+.cce-trade__price-chart-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----------------------
+TRADE CUSTOM BREACKPOINTS
+---------------------- */
+@media (max-height: 850px) {
+  .application:not(.cce-trade--mobile) {
+    .cce-trade__depth-chart {
+      display: none !important;
+      max-height: 100%;
+      border: none;
+    }
+
+    .cce-trade__charts-toggle {
+      display: block;
+    }
+
+    .cce-trade__price-chart--show {
+      .cce-trade__price-chart {
+        display: flex !important;
+      }
+
+      .cce-trade__depth-chart {
+        display: none !important;
+      }
+
+      .cce-trade__price-chart-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .cce-trade__depth-chart-title {
+        display: none;
+      }
+    }
+
+    .cce-trade__depth-chart--show {
+      .cce-trade__price-chart {
+        display: none !important;
+      }
+
+      .cce-trade__depth-chart {
+        display: flex !important;
+      }
+
+      .cce-trade__price-chart-title {
+        display: none;
+      }
+
+      .cce-trade__depth-chart-title {
+        display: block;
+      }
+    }
+  }
+}

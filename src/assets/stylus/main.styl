@@ -1,0 +1,209 @@
+// vuetify styles
+
+$color-pack = false
+
+// Theme
+$body-font-family := 'Roboto', sans-serif
+$font-size-root := 14px
+$line-height-root := 1.5
+
+@require './_colors'
+
+$material-light := {
+  status-bar: {
+    regular: #E0E0E0,
+    lights-out: rgba(#fff, .7)
+  },
+  app-bar: #F5F5F5,
+  background: #ebebeb,
+  cards: #FFFFFF,
+  chips: {
+    background: $grey.lighten-2,
+    color: rgba(#000, .87)
+  },
+  dividers: rgba(#000, .12),
+  text: {
+    theme: #fff,
+    primary: rgba(#7583A1, .87),
+    secondary: rgba(#7583A1, .54),
+    disabled: rgba(#7583A1, .38),
+    link: $blue.darken-2,
+    link-hover: $grey.darken-3
+  },
+  icons: {
+    active: rgba(#000, .54),
+    inactive: rgba(#000, .38)
+  },
+  inputs: {
+    solo-inverted: rgba(#000, .16),
+    solo-inverted-focused: #424242,
+    solo-inverted-focused-text: #fff
+  },
+  buttons: {
+    disabled: rgba(#000, .26),
+    focused: rgba(#000, .12),
+    focused-alt: rgba(#fff, .6),
+    pressed: rgba(#999, .4)
+  },
+  expansion-panels: {
+    focus: #EEEEEE
+  },
+  selection-controls: {
+    thumb: {
+      inactive: $grey.lighten-5,
+      disabled: $grey.lighten-1
+    },
+    track: {
+      inactive: rgba(#000, .38),
+      disabled: rgba(#000, .12)
+    }
+  },
+  slider: {
+    active: rgba(#000, .38),
+    inactive: rgba(#000, .26),
+    disabled: rgba(#000, .26),
+    discrete: #000
+  },
+  tabs: {
+    active: rgba(#000, .87)
+  },
+  input-bottom-line: rgba(#000, .42),
+  stepper: {
+    active: rgba(#fff, 1),
+    completed: rgba(#000, 0.87),
+    hover: rgba(#000, 0.54)
+  },
+  table: {
+    active: $grey.lighten-4
+    hover: $grey.lighten-3
+  },
+  picker: {
+    body: #fff,
+    clock: $grey.lighten-2,
+    indeterminateTime: $grey.lighten-1,
+    title: $grey.lighten-2
+  },
+  bg-color: #fff
+  fg-color: #000
+  text-color: #000
+  primary-text-percent: .87
+  secondary-text-percent: .54
+  disabledORhints-text-percent: .38
+  divider-percent: .12
+  active-icon-percent: .54
+  inactive-icon-percent: .38
+}
+
+$material-dark := {
+  status-bar: {
+    regular: #000000,
+    lights-out: rgba(#000, .2)
+  },
+  app-bar: #121626,
+  background: #0c101c,
+  cards: #161b2e,
+  chips: {
+    background: #FFF,
+    color: $material-light.text.primary
+  },
+  dividers: rgba(#fff, .12),
+  text: {
+    theme: #8596b9,
+    primary: #8596b9,
+    secondary: rgba(#fff, .70),
+    disabled: rgba(#fff, .50),
+    link: $blue.accent-1,
+    link-hover: $grey.lighten-3
+  },
+  icons: {
+    active: #8596b9,
+    inactive: rgba(#8596b9, .5)
+  },
+  inputs: {
+    solo-inverted: rgba(#fff, .16),
+    solo-inverted-focused: #fff,
+    solo-inverted-focused-text: $material-light.text.primary
+  },
+  buttons: {
+    disabled: rgba(#fff, .3),
+    focused: rgba(#fff, .12),
+    focused-alt: rgba(#fff, .1),
+    pressed: rgba(#ccc, .25)
+  },
+  expansion-panels: {
+    focus: #494949
+  },
+  selection-controls: {
+    thumb: {
+      inactive: $grey.lighten-1,
+      disabled: $grey.darken-3
+    },
+    track: {
+      inactive: rgba(#fff, .3),
+      disabled: rgba(#fff, .1)
+    }
+  },
+  slider: {
+    active: rgba(#fff, .3),
+    inactive: rgba(#fff, .2),
+    disabled: rgba(#fff, .2),
+    discrete: #fff
+  },
+  tabs: {
+    active: #8596b9,
+    inactive: rgba(#8596b9, .4)
+  },
+  input-bottom-line: rgba(#fff, .7),
+
+  stepper: {
+    active: rgba(#fff, 1),
+    completed: rgba(#fff, 0.87),
+    hover: rgba(#fff, 0.75)
+  },
+  table: {
+    color: #8596b9
+    active: #242d4c
+    hover: #242d4c
+    th: {
+      color: #8596b9
+    }
+  },
+  picker: {
+    body: #424242,
+    clock: $grey.darken-2,
+    indeterminateTime: $grey.darken-1,
+    title: $grey.darken-2
+  },
+  bg-color: #303030
+  fg-color: #fff
+  text-color: #fff
+  primary-text-percent: 1
+  secondary-text-percent: .70
+  disabledORhints-text-percent: .50
+  divider-percent: .12
+  active-icon-percent: 1
+  inactive-icon-percent: .50
+}
+
+@import '~vuetify/src/stylus/main'
+
+.alert {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.list {
+  padding: 16px 0;
+}
+
+.theme--light .navigation-drawer {
+  background-color: #f0f1f5;
+}
+
+.theme--light .cce-account__toolbar {
+  background-color: #e7e8ec;
+}
+
+.theme--dark .bottom-nav {
+  background-color: #1a2136;
+}

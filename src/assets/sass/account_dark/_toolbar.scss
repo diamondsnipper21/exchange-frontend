@@ -1,0 +1,108 @@
+/* ----------------------
+  TOOLBAR
+---------------------- */
+.cce-account__toolbar {
+  z-index: 99;
+  padding-left: 0px!important;
+  background-color: $dark-trade-colorMainBg;
+  // background: $exchange-green-5;
+  // background: $gradient-1-moz;
+  // background: $gradient-1-web;
+  // background: $gradient-1-lin;
+  // filter: $gradient-1-filter;
+
+
+  .toolbar__content {
+    height: 55px !important;
+    // color: $simple-white-0;
+    // .icon {
+    //   color: $simple-white-0;
+    // }
+    // .toolbar__side-icon {
+    //   .icon {
+    //     color: $simple-white-0;
+    //   }
+    // }
+
+    .toolbar__title {
+      margin-left: 25px;
+    }
+
+    .cce-account__logo {
+      width: 300px;
+      height: 100%;
+      margin: 0px !important;
+      padding: 7px;
+      @include flexAlignCenter;
+      justify-content: flex-start;
+
+      @include media(md) {
+        width: 155px;
+      }
+
+      img {
+        max-height: 100%;
+        position: relative;
+        left: 15px;
+      }
+    }
+
+    .layout {
+      flex-wrap: wrap;
+      align-items: center;
+
+      .static-menu {
+        list-style: none;
+        padding-left: 15px;
+
+        li {
+          display: inline-block;
+          padding: 0 15px;
+
+          a {
+            color: $simple-white-0;
+            text-decoration: none;
+            opacity: 0.7;
+          }
+          a:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+
+      .user-menu {
+        list-style: none;
+
+        li {
+          display: inline-block;
+          padding: 0 5px;
+
+          a {
+            color: $simple-white-0;
+            text-decoration: none;
+            opacity: 0.7;
+          }
+          a:hover {
+            opacity: 0.9;
+          }
+          span {
+            font-weight: 800;
+          }
+          .btn {
+            // color: $simple-white-0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+          }
+        }
+        li:nth-child(1) {
+          padding: 0 20px;
+        }
+        li:nth-child(2) {
+          border-left: 1px solid $transparent-white-4;
+          padding-left: 15px;
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+<!-- <template>
+  <span>
+    <cce-dark-logo v-if="themeMode === true && themeName === 'cce'" />
+    <cce-light-logo v-if="themeMode === false && themeName === 'cce'" />
+    <xbase-dark-logo v-if="themeMode === true && themeName === 'xbase'" />
+    <xbase-light-logo v-if="themeMode === false && themeName === 'xbase'" />
+    <kryptostack-dark-logo v-if="themeMode === true && themeName === 'kryptostack'" />
+    <kryptostack-light-logo v-if="themeMode === false && themeName === 'kryptostack'" />
+    <traderone-dark-logo v-if="themeMode === true && themeName === 'traderone'" />
+    <traderone-light-logo v-if="themeMode === false && themeName === 'traderone'" />
+    <clrquantumx-dark-logo v-if="themeMode === true && themeName === 'clrquantumx'" />
+    <clrquantumx-light-logo v-if="themeMode === false && themeName === 'clrquantumx'" />
+    <genblock-dark-logo v-if="themeMode === true && themeName === 'genblock'" />
+    <genblock-light-logo v-if="themeMode === false && themeName === 'genblock'" />
+  </span>
+</template>
+
+<script>
+import CceDarkLogo from '@/components/UI/Logo/CceDark';
+import CceLightLogo from '@/components/UI/Logo/CceLight';
+import XbaseDarkLogo from '@/components/UI/Logo/XbaseDark';
+import XbaseLightLogo from '@/components/UI/Logo/XbaseLight';
+import KryptostackDarkLogo from '@/components/UI/Logo/KryptostackDark';
+import KryptostackLightLogo from '@/components/UI/Logo/KryptostackLight';
+import TraderoneDarkLogo from '@/components/UI/Logo/TraderoneDark';
+import TraderoneLightLogo from '@/components/UI/Logo/TraderoneLight';
+import ClrquantumxDarkLogo from '@/components/UI/Logo/ClrquantumxDark';
+import ClrquantumxLightLogo from '@/components/UI/Logo/ClrquantumxLight';
+import GenblockDarkLogo from '@/components/UI/Logo/GenblockDark';
+import GenblockLightLogo from '@/components/UI/Logo/GenblockLight';
+
+export default {
+  name: 'logo',
+  components: {
+    CceDarkLogo,
+    CceLightLogo,
+    XbaseDarkLogo,
+    XbaseLightLogo,
+    KryptostackDarkLogo,
+    KryptostackLightLogo,
+    TraderoneDarkLogo,
+    TraderoneLightLogo,
+    ClrquantumxDarkLogo,
+    ClrquantumxLightLogo,
+    GenblockDarkLogo,
+    GenblockLightLogo,
+  },
+  computed: {
+    themeMode() {
+      return this.$store.getters['app/themeMode'];
+    },
+    themeName() {
+      return this.$store.getters['app/themeName'];
+    },
+  },
+};
+</script>
+<style>
+
+</style>
+-->
+<template>
+  <!-- cce-light-theme -->
+  <img class="size" :src="logoUrlAccount" />
+<!--  <svg class="size" width="100%" height="100%" viewBox="0 0 540 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M26.362,13.476c-0.133,0.001 -0.266,0.002 -0.398,0.004c-0.105,-0.006 -0.21,-0.025 -0.312,-0.016c-2.706,0.224 -5.031,1.271 -6.944,3.169c-1.645,1.633 -2.65,3.603 -3.028,5.871c-0.194,1.163 -0.246,2.332 0.002,3.498c0.118,1.074 0.468,2.081 0.944,3.043c0.545,1.104 1.228,2.117 2.161,2.95c0.502,0.567 1.099,1.018 1.755,1.399l0,0c0.576,0.323 1.109,0.726 1.752,0.927c0.196,0.083 0.381,0.195 0.603,0.205c1.365,0.524 2.79,0.682 4.235,0.575c2.671,-0.199 4.974,-1.24 6.884,-3.093c0.339,-0.329 0.724,-0.633 0.915,-1.088c0.526,-0.613 0.894,-1.318 1.266,-2.025c0.535,-1.017 0.838,-2.092 0.967,-3.223c0.054,-0.634 0.129,-1.259 0.053,-1.907c-0.059,-0.505 -0.089,-1.014 -0.192,-1.516c-0.092,-0.958 -0.385,-1.853 -0.889,-2.679c-0.075,-0.237 -0.203,-0.445 -0.354,-0.642c0.028,-0.117 -0.011,-0.201 -0.127,-0.247c0.013,-0.143 -0.086,-0.238 -0.156,-0.344c-0.559,-0.849 -1.217,-1.617 -1.996,-2.275c-1.134,-0.958 -2.396,-1.698 -3.845,-2.102c-0.625,-0.263 -1.301,-0.297 -1.957,-0.419c-0.023,-0.011 -0.045,-0.014 -0.068,-0.012c-0.281,-0.047 -0.563,-0.086 -0.847,-0.086c-0.141,0 -0.282,0.009 -0.424,0.033Z" style="fill-rule:nonzero;"/><path d="M26.173,0.038c-0.419,-0.035 -0.837,-0.053 -1.253,0.023c-1.521,0.008 -3.009,0.24 -4.477,0.621c-1.664,0.333 -3.237,0.927 -4.764,1.641c-0.968,0.453 -1.918,0.945 -2.788,1.57l0,0c-0.077,0.001 -0.129,0.041 -0.169,0.102c-0.211,0.102 -0.399,0.236 -0.569,0.394c-0.057,0.029 -0.119,0.051 -0.171,0.088c-2.861,2.029 -5.167,4.552 -6.916,7.564c-1.762,3.034 -2.794,6.3 -3.148,9.774c-0.105,1.028 -0.162,2.061 -0.077,3.096c-0.022,0.049 0.002,0.125 0.014,0.184c-0.041,0.414 0.017,0.825 0.056,1.235c0.373,3.931 1.618,7.574 3.792,10.898c0.713,1.09 1.455,2.164 2.396,3.085c0.057,0.069 0.111,0.141 0.172,0.207c1.363,1.473 2.907,2.737 4.59,3.84c1.109,0.754 2.302,1.356 3.538,1.878c0.652,0.275 1.299,0.566 1.997,0.717c0.07,0.033 0.137,0.073 0.21,0.096c2.83,0.9 5.733,1.268 8.701,1.108c1.002,-0.054 2.006,-0.129 2.984,-0.379c0.242,-0.005 0.475,-0.052 0.701,-0.135c0.176,0.004 0.343,-0.031 0.499,-0.114c1.203,-0.221 2.35,-0.624 3.479,-1.072c1.223,-0.486 2.409,-1.051 3.509,-1.775c1.123,-0.615 2.136,-1.384 3.108,-2.203c0.902,-0.761 1.771,-1.557 2.509,-2.481c0.183,-0.141 0.315,-0.325 0.437,-0.517c0.227,-0.194 0.413,-0.422 0.556,-0.683c0.125,-0.093 0.205,-0.218 0.27,-0.356c0.046,-0.057 0.091,-0.115 0.137,-0.172c0.407,-0.492 0.741,-1.032 1.073,-1.573c0.883,-1.438 1.645,-2.934 2.164,-4.541c0.161,-0.374 0.311,-0.75 0.379,-1.153c0.449,-1.324 0.705,-2.687 0.876,-4.07c0.036,-0.285 -0.072,-0.311 -0.305,-0.335c-1.691,-0.172 -3.38,-0.377 -5.074,-0.528c-0.88,-0.079 -1.753,-0.248 -2.641,-0.237c-0.616,-0.202 -0.715,-0.149 -0.796,0.436c-0.025,0.176 -0.028,0.355 -0.041,0.533c-0.029,0.057 -0.062,0.122 -0.039,0.172c-0.09,0.401 -0.18,0.803 -0.271,1.204c-0.315,1.02 -0.723,2.003 -1.176,2.969c-0.518,0.825 -0.985,1.678 -1.605,2.442c-1.651,2.034 -3.67,3.586 -6.099,4.623c-0.964,0.412 -1.975,0.667 -2.983,0.94l0,0c-0.102,-0.042 -0.141,0.064 -0.215,0.088c-0.356,-0.081 -0.692,0.043 -1.035,0.101l0,0c-0.133,-0.015 -0.265,-0.027 -0.389,0.037c-0.183,0.003 -0.367,0.002 -0.55,0.011c-2.658,0.127 -5.181,-0.399 -7.577,-1.531c-0.569,-0.329 -1.138,-0.659 -1.708,-0.987c-0.165,-0.094 -0.292,-0.261 -0.506,-0.265c-0.053,-0.052 -0.099,-0.113 -0.159,-0.157c-0.825,-0.603 -1.572,-1.29 -2.264,-2.036c-0.021,-0.169 -0.168,-0.255 -0.265,-0.369c-2.311,-2.748 -3.529,-5.901 -3.66,-9.469c-0.037,-1.011 0.092,-2.007 0.18,-3.008c0.021,-0.06 0.05,-0.119 0.061,-0.18c0.435,-2.416 1.411,-4.599 2.897,-6.567c0.46,-0.609 1.015,-1.136 1.487,-1.733c0.32,-0.323 0.685,-0.591 1.04,-0.874c2.54,-2.019 5.43,-3.165 8.689,-3.396c1.181,-0.083 2.355,-0.019 3.524,0.167c0.137,0.022 0.326,0.136 0.373,-0.12c0.078,-0.43 0.148,-0.861 0.222,-1.292c0.087,-0.171 0.024,-0.353 0.039,-0.529c0.221,-0.408 0.185,-0.861 0.233,-1.299l0.002,-0.005c0.21,-0.077 0.127,-0.259 0.15,-0.403c0.297,-1.531 0.597,-3.063 0.887,-4.596c0.019,-0.101 0.136,-0.256 -0.07,-0.322c-0.052,-0.009 -0.103,-0.016 -0.154,-0.024c-0.382,-0.128 -0.778,-0.142 -1.176,-0.139c-0.037,-0.027 -0.072,-0.069 -0.111,-0.073c-0.72,-0.071 -1.438,-0.179 -2.165,-0.16c-0.092,-0.014 -0.184,-0.024 -0.275,-0.024c-0.097,0 -0.194,0.011 -0.29,0.038Z" style="fill-rule:nonzero;"/><path d="M36.927,2.823c-0.583,1.167 -1.174,2.33 -1.763,3.494c-0.308,0.485 -0.553,1.002 -0.788,1.524c-0.324,0.614 -0.65,1.228 -0.973,1.843c-0.423,0.807 -0.422,0.807 0.426,1.213c1.371,0.872 2.645,1.857 3.704,3.092c0.098,0.153 0.217,0.288 0.364,0.398c0.723,0.934 1.38,1.908 1.895,2.97c0.567,1.166 0.983,2.382 1.247,3.649c0.029,0.139 0.008,0.347 0.256,0.296c0.903,-0.186 1.825,-0.274 2.712,-0.533c0.026,-0.006 0.053,-0.014 0.079,-0.023l0.002,0l0,0c0.293,0.045 0.562,-0.066 0.837,-0.127l0.001,0c1.418,-0.221 2.83,-0.47 4.232,-0.775c0.051,-0.007 0.101,-0.014 0.151,-0.021c0.496,-0.054 0.496,-0.054 0.342,-0.525c-0.116,-0.624 -0.275,-1.238 -0.45,-1.848c-0.265,-0.927 -0.562,-1.842 -0.98,-2.714c-0.396,-1.146 -0.972,-2.203 -1.638,-3.216l0,0c0.005,-0.064 -0.028,-0.104 -0.081,-0.133c-0.483,-0.868 -1.062,-1.671 -1.72,-2.419c-0.587,-0.772 -1.209,-1.511 -1.978,-2.119c-0.047,-0.192 -0.215,-0.286 -0.348,-0.402c-0.47,-0.411 -0.938,-0.825 -1.424,-1.217c-1.167,-0.944 -2.43,-1.75 -3.761,-2.452c-0.069,-0.037 -0.133,-0.082 -0.195,-0.082c-0.052,0 -0.101,0.032 -0.149,0.127Z" style="fill:#0ff;fill-rule:nonzero;"/><text x="53.874px" y="43.417px" style="font-family:'BankGothicBT-Light', 'BankGothic Lt BT', sans-serif;font-stretch:semi-expanded;font-size:68.544px;">TR<tspan x="147.285px 197.12px " y="43.417px 43.417px ">AD</tspan>ER ONE</text></svg>-->
+  <!-- cce-light-theme -->
+</template>
+
+<script>
+export default {
+  name: 'cce-light-logo',
+  data() {
+    return {
+      logoUrlAccount: '',
+      isMobile: false,
+    };
+  },
+  computed: {
+    /**
+     * Returns theme mode
+     * @returns {Boolean}
+     */
+    themeMode() {
+      return this.$store.getters['app/themeMode'];
+    },
+
+    /**
+    * Get project settings
+    */
+    appSetting() {
+      return this.$store.getters['app/getAppSetting'];
+    },
+  },
+  mounted() {
+    this.setLogoUrl(this.appSetting);
+    window.addEventListener('resize', this.resizeWindow);
+  },
+  methods: {
+    resizeWindow() {
+      const node = document.querySelector('.on-mobile');
+      if (node) {
+        const display = getComputedStyle(node).display;
+
+        if (display === 'none') {
+          this.isMobile = false;
+        } else {
+          this.isMobile = true;
+        }
+        this.setLogoUrl(this.appSetting);
+      }
+    },
+    setLogoUrl(setting) {
+      if (!('themeSettings' in setting)) {
+        setTimeout(() => {
+          this.setLogoUrl(this.appSetting);
+        }, 1000);
+        return;
+      }
+
+      if (this.themeMode) {
+        if (this.isMobile) {
+          this.logoUrlAccount = `${setting.themeSettings.s3_endpoint}/${setting.assetsBucket}${setting.themeSettings.logoUrlAccountMobileDark}?rnd=${Math.random()}`;
+        } else {
+          this.logoUrlAccount = `${setting.themeSettings.s3_endpoint}/${setting.assetsBucket}${setting.themeSettings.logoUrlAccount}?rnd=${Math.random()}`;
+        }
+      } else if (this.isMobile) {
+        this.logoUrlAccount = `${setting.themeSettings.s3_endpoint}/${setting.assetsBucket}${setting.themeSettings.logoUrlAccountMobileLight}?rnd=${Math.random()}`;
+      } else {
+        this.logoUrlAccount = `${setting.themeSettings.s3_endpoint}/${setting.assetsBucket}${setting.themeSettings.logoUrlAccountLight}?rnd=${Math.random()}`;
+      }
+    },
+  },
+  watch: {
+    appSetting(next) {
+      this.setLogoUrl(next);
+    },
+    themeMode() {
+      this.setLogoUrl(this.appSetting);
+    },
+  },
+};
+</script>
+
+<style scoped>
+  .size { /*height: 36px;*/ max-width: 191.56px; width: 100%; }
+</style>

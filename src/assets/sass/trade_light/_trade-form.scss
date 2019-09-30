@@ -1,0 +1,103 @@
+/* ----------------------
+  TRADE FORM LIGHT THEME RELATED STYLES
+---------------------- */
+.cce-trade__trade-form-toggle-ask,
+.cce-trade__trade-form-toggle-bid {
+  color: $light-trade-colorBtnText !important;
+}
+
+.cce-trade__trade-form-toggle-ask {
+  background-color: $light-trade-colorHigh;
+  border-color: $light-trade-colorHigh;
+}
+
+.cce-trade__trade-form-toggle-bid {
+  background-color: $light-trade-colorLow;
+  border-color: $light-trade-colorLow;
+  opacity: 1;
+}
+
+.cce-trade__trade-form-action-ask {
+  background-color: $light-trade-colorLow;
+  border-color: $light-trade-colorLow;
+}
+
+.cce-trade__trade-form-action-bid {
+  background-color: $light-trade-colorHigh;
+  border-color: $light-trade-colorHigh;
+}
+
+.cce-trade__trade-form-total {
+  background: $light-trade-colorInputBg;
+}
+
+.cce-trade__trade-form-volume-btn {
+  background: $light-trade-colorInputBg ;
+  &.btn--disabled {
+    &.highlight {
+      .btn__content {
+        background-color: initial;
+      }
+    }
+  }
+  &.highlight {
+    .btn__content {
+      background-color: $transparent-black-5;
+    }
+  }
+}
+
+
+.cce-trade__trade-form-volume .theme--light.icon {
+  background-color: $light-trade-colorContentBg;
+}
+
+// trade form input
+.cce-trade__trade-form-control {
+  background: $light-trade-colorInputBg;
+}
+
+.cce-trade__trade-form-control--disabled {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.cce-trade__trade-form-control-input--error {
+  border: 1px solid rgba(207, 65, 29, 0.47);
+}
+
+.cce-trade__trade-form-control-currency {
+  color: $light-trade-colorSubHeaderText;
+  background-color: $light-trade-colorInputBg;
+}
+
+.cce-trade__trade-form-control-arrows {
+  border-left: 1px solid $light-trade-colorContentBg;
+  background: $light-trade-colorInputBg;
+}
+
+.cce-trade__trade-form-control-arrows-up,
+.cce-trade__trade-form-control-arrows-down {
+  &:hover {
+    .icon {
+      color: $light-trade-colorActive;
+    }
+  }
+}
+
+.cce-trade__trade-form-control-arrows-down {
+  border-top: 1px solid $light-trade-colorContentBg;
+}
+
+.cce-overlay {
+  background: $overlay-light-bg;
+}
+
+.cce-trade__btn[disabled="disabled"] {
+  &,
+  &.btn.btn--disabled:not(.btn--icon):not(.btn--flat),
+  & .btn__content:before,
+  & > * {
+    background-color: #CECECE !important;
+    color: $light-trade-colorSubHeaderText;
+  }
+}

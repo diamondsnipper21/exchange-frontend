@@ -1,0 +1,157 @@
+@mixin flexCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin fullSize {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin positionAbsoluteZero {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin backgroundTransparent {
+  background-color: transparent !important
+}
+
+@mixin fontFamilyTrade {
+  font-family: $trade-fontFamily;
+}
+
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
+
+////////////////////////////////////////
+// SCROLLBAR DARK THEME
+////////////////////////////////////////
+@mixin scrollBarDark {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  position: relative;
+  background: transparent;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(170, 170, 170, 0.15) #121626;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #121626;
+    border-left: 1px solid #23283c;
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: rgba(170, 170, 170, 0.15);
+
+    &:hover {
+      background: rgba(170, 170, 170, 0.3);
+    }
+  }
+}
+
+////////////////////////////////////////
+// SCROLLBAR LIGHT THEME
+////////////////////////////////////////
+@mixin scrollBarLight {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  position: relative;
+  background: transparent;
+  scrollbar-width: thin;
+  scrollbar-color:  $light-trade-colorBgActive $light-trade-colorDivider;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $light-trade-colorDivider;
+    border-left: 1px solid $light-trade-colorBgActive;
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: rgba(#00b8a7, 0.2);
+
+    &:hover {
+      background: rgba(#00b8a7, 0.5);
+    }
+  }
+}
+
+////////////////////////////////////////
+// MEDIA QUERY MANAGER
+////////////////////////////////////////
+@mixin media($breakpoint) {
+  @if $breakpoint == xs_min {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xs_med {
+    @media only screen and (max-width: 540px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xs_max {
+    @media only screen and (max-width: 640px) {
+      @content;
+    }
+  }
+  @if $breakpoint == sm {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == md {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg_min {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg_med {
+    @media only screen and (min-width: 1263px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg_max {
+    @media only screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+  
+}

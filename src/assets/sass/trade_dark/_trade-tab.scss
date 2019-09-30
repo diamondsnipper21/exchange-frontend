@@ -1,0 +1,49 @@
+/* ----------------------
+  TRADE TAB
+---------------------- */
+.cce-trade__tabs {
+  position: relative;
+
+  .tabs__container {
+    height: 36px;
+  }
+
+  .tabs__bar {
+    background-color: $dark-trade-colorHeaderBg;
+  }
+
+  .accent {
+    background-color: $dark-trade-colorActive !important;
+    display: none;
+    height: 1px;
+  }
+
+  .tabs__item {
+    text-transform: none;
+    color: $dark-trade-colorHeaderText;
+    // fix for tabs__item color not applying when reusing tradeMarket component
+    @include fontFamilyTrade;
+  }
+
+  .tabs__item--active {
+    background: $dark-trade-colorContentBg;
+  }
+
+  .tabs__item:not(.tabs__item--active) {
+    opacity: 0.45 !important;
+  }
+
+  .tabs__div {
+    display: inline-block; //https://github.com/vuetifyjs/vuetify/issues/3211
+  }
+}
+
+.cce-trade__tabs--line {
+  .accent {
+    display: block;
+  }
+
+  .tabs__item--active {
+    background: transparent;
+  }
+}

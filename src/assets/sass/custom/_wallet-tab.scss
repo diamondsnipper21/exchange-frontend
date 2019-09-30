@@ -1,0 +1,277 @@
+/* ----------------------
+  WALLET TAB
+---------------------- */
+
+.cce-wallets,
+.cce-wallets *:not(i) {
+  font-size: 13px;
+  font-family: $trade-fontFamily;
+
+  &.table__overflow {
+    border-radius: 3px;
+  }
+
+  &.table {
+    background: none;
+
+    & thead {
+      border-spacing: 0 0;
+    }
+
+    & tbody {
+      margin-top: -10px !important;
+    }
+
+    & tr {
+      border-bottom: 0 !important;
+    }
+    
+    & td:first-child {
+      border-top-left-radius: 3px; 
+      border-bottom-left-radius: 3px;
+    }
+    
+    & td:last-child {
+      border-bottom-right-radius: 3px; 
+      border-top-right-radius: 3px; 
+    }
+  }
+}
+
+.cce-wallets__table-row {
+  cursor: pointer;
+}
+
+.cce-wallets__spacer {
+  height: 8px;
+}
+
+.cce-wallets__header__text {
+  font-size: 13px !important;
+  font-family: $trade-fontFamily !important;
+}
+
+.cce-wallets__header--transparent {
+  opacity: 0.5,
+}
+
+.cce-wallets__currency {
+  display: flex;
+  align-items: center;
+}
+
+.cce-wallet-zero-balance * {
+  font-size: 13px;
+}
+
+.cce-wallet-zero-balance__header {
+  padding: 8px;
+  max-height: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-family: $trade-fontFamily;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.cce-wallet-currency {
+  height: 45px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 10px;
+  @include flexAlignCenter;
+  cursor: pointer;
+
+  &__image {
+    @include size(24px);
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.cce-wallets-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+
+  & * {
+    font-size: 13px;
+  }
+}
+
+.cce-wallets-modal__text {
+  font-family: $trade-fontFamily;
+
+  &__header {
+    font-weight: 400,
+  }
+
+  &__description {
+    opacity: 0.5;
+  }
+}
+
+.cce-wallets-modal__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+}
+
+.cce-wallets-modal__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 400px;
+  max-height: 400px;
+  min-width: 600px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+
+  @include media(xs_max) {
+    min-width: 300px;
+    width: 95%;
+    min-height: 420px;
+    max-height: 420px;
+  }
+}
+
+.cce-wallets-modal__close-btn {
+  font-size: 15px;
+}
+
+.cce-deposit-address {
+  border-radius: 5px;
+  padding: 13px;
+  line-height: 1.5;
+  box-shadow: 1px 1px 0.5rem rgba(0,0,0,0.1) inset;
+}
+
+.cce-withdraw-form * {
+  font-size: 13px !important;
+}
+
+.cce-withdraw-address {
+  font-family: $trade-fontFamily;
+  border-radius: 5px;
+  padding: 10px 13px;
+  line-height: 1.5;
+  box-shadow: 1px 1px 0.5rem rgba(0,0,0,0.1) inset;
+
+  .input-group__details {
+    display: none !important;
+  }
+
+  .input-group {
+    padding: 0 !important;
+  }
+}
+
+.cce-withdraw-address__button {
+  text-decoration: underline;
+}
+
+.cce-withdraw-address__input--right input {
+  text-align: right;
+}
+
+.cce-deposit-address__icon {
+  cursor: pointer;
+
+  & i {
+    font-size: 15px;
+  }
+}
+
+.cce-wallet-history {
+
+  .datatable thead {
+    display: none;
+  }
+}
+
+.cce-wallet-history__table-td {
+  height: 36px !important;
+}
+
+.wallet-tab {
+  table {
+    thead, tbody {
+      tr {
+        @include flexRow;
+
+        @include media(sm) {
+          padding: 10px 0 !important;
+        }
+
+        th, td {
+          @include flexAlignCenter;
+
+          @include media(sm) {
+            padding: 5px 0 !important;
+          }
+          @include media(xs_med) {
+            font-size: 11px;
+          }
+
+          &:nth-child(1) {
+            width: 23%;
+            @include media(md) {
+              width: 20%;
+            }
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(2) {
+            width: 17%;
+            @include media(md) {
+              width: 15%;
+            }
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(3) {
+            width: 15%;
+            @include media(md) {
+              width: 15%;
+            }
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(4) {
+            width: 15%;
+            @include media(md) {
+              width: 15%;
+            }
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(5) {
+            width: 30%;
+            text-transform: capitalize;
+            font-weight: bolder;
+            @include media(md) {
+              width: 35%;
+            }
+            @include media(sm) {
+              width: 100%;
+              padding: 10px 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+/* ----------------------
+  TRADE PANEL LIGHT THEME RELATED STYLES
+---------------------- */
+.cce-trade__panel {
+  background-color: $light-trade-colorContentBg;
+}
+
+.cce-trade__panel-title {
+  background: $light-trade-colorHeaderBg;
+  border-bottom: 1px solid $light-trade-colorDivider;
+  color: $light-trade-colorHeaderText;
+}
+
+.cce-trade__panel-orders-stats {
+  background: $light-trade-colorDivider;
+  border-top: 1px solid $light-trade-colorDivider;
+  border-bottom: 1px solid $light-trade-colorDivider;
+}
+
+.cce-trade__panel-orders-stats--no-arrow {
+  color: $light-trade-colorContentBg !important;
+}

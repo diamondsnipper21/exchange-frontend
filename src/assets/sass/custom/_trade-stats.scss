@@ -1,0 +1,51 @@
+/* ----------------------
+  TRADE STATS
+---------------------- */
+.cce-trade__stats {
+  @include flexAlignCenter;
+  height: 100%;
+  overflow: hidden;
+  flex: auto;
+}
+
+.cce-trade__stats-row {
+  @include flexAlignCenter;
+  flex: none;
+}
+
+.cce-trade__stats-item {
+  @include flexAlignCenter;
+  flex-wrap: wrap;
+  float: left;
+  margin: 0 0 0 30px;
+  height: 100%;
+  min-width: 85px;
+}
+
+.cce-trade__stats-item-label {
+  font-size: 13px;
+  margin: 0 0 -3px 0;
+  @include fontFamilyTrade;
+}
+
+.cce-trade__stats-item-value {
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.cce-trade__stats-item-arrow {
+  position: absolute;
+  top: 6px;
+  left: -14px;
+  font-size: 13px;
+}
+
+.cce-trade__stats-item-value--sub,
+.cce-trade__stats-item-value--currency {
+  position: relative;
+  top: -1px;
+  margin: 0 0 0 5px;
+  font-size: 12px;
+  opacity: 0.8;
+}

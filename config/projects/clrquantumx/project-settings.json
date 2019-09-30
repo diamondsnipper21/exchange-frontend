@@ -1,0 +1,128 @@
+{
+  "_id": "5d415e462cf0536339be2854",
+  "projectId": "4dcbe48b-cc67-4dfa-a835-bdafcacbfbd0",
+  "admins": [],
+  "partnerUid": "",
+  "themeSettings": {
+    "tradeTabsOrder": [
+      "market",
+      "limit",
+      "stop"
+    ],
+    "googleAuthName": "CLRQuantumX.com",
+    "customLogin": "#/login",
+    "navItems": [
+      {
+        "icon": "fas fa-tachometer-alt",
+        "name": "Dashboard",
+        "to": "account.dashboard"
+      },
+      {
+        "activeTabs": [
+          "account.deposits",
+          "account.withdrawals"
+        ],
+        "icon": "fas fa-wallet",
+        "name": "Wallet",
+        "to": "account.wallet"
+      },
+      {
+        "activeTabs": [
+          "account.tradeHistory"
+        ],
+        "icon": "fas fa-exchange-alt",
+        "name": "Orders",
+        "to": "account.openOrders"
+      },
+      {
+        "icon": "fas fa-sliders-h",
+        "name": "Settings",
+        "to": "account.settings"
+      },
+      {
+        "icon": "fas fa-link",
+        "name": "Referral",
+        "to": "account.referral"
+      }
+    ],
+    "themeMode": true,
+    "showAllApps": false,
+    "carouselItems": [],
+    "themeAnalyticsGlobal": "UA-117801824-12",
+    "themeAnalyticsClient": "UA-127215104-1",
+    "navStaticPages": [
+      {
+        "name": "Support",
+        "href": "https://clrquantumx.com/support/"
+      },
+      {
+        "name": "Terms",
+        "href": "https://clrquantumx.com/terms/"
+      },
+      {
+        "name": "Fees",
+        "href": "https://clrquantumx.com/fees/"
+      }
+    ],
+    "socialNetworks": [
+      "twitter",
+      "telegram"
+    ],
+    "logoHref": "https://clrquantumx.com/",
+    "logoUrlAccount": "/static/img/themes/clrquantumx/clr.png",
+    "logoUrlAuth": "/static/img/themes/clrquantumx/clr.png",
+    "logoUrlPartner": "https://s3-eu-west-1.amazonaws.com/trade.clrquantumx.com/static/img/themes/clrquantumx/clr.png",
+    "logoUrlTrade": "/static/img/themes/clrquantumx/clr.png",
+    "faviconUrl": "/static/img/themes/clrquantumx/logo-exchange-favicon.png",
+    "bgUrlAuth": {
+      "backgroundColor": "#141c24"
+    },
+    "darkBrandColor": "#121626",
+    "darkPageBackgroundColor": "#222836",
+    "darkContainerBackgroundColor": "#161b2e",
+    "darkBuyColor": "#0da19c",
+    "darkSellColor": "#dd842e",
+    "lightBrandColor": "#ebebeb",
+    "lightPageBackgroundColor": "#f5f5f5",
+    "lightContainerBackgroundColor": "#ffffff",
+    "lightBuyColor": "#0da19c",
+    "lightSellColor": "#dd842e",
+    "hostMapping": "",
+    "logoUrlAccountDelete": false,
+    "faviconUrlDelete": false
+  },
+  "code": "CLRQ",
+  "commissionPlatform": "40",
+  "cloudfrontDistributionId": "E1YTCEAHAVXWE8",
+  "emailTemplateSettings": {
+    "confirmNewIpUrl": "https://{{domain}}/#/emails/cip/{{confirmNewIPToken}}",
+    "recoverPasswordUrl": "http://{{domain}}/#/emails/rp/{{recoverPasswordToken}}",
+    "supportEmail": "support@clrquantumx.com",
+    "appId": "cce-wl-clrq",
+    "domain": "staging-2-clrquantumx.chaincreator.exchange",
+    "name": "CLRQuantumX Exchange",
+    "confirmPaymentUrl": "https://{{domain}}/#/emails/cpmt/{{confirmPaymentToken}}",
+    "confirmUrl": "https://{{domain}}/#/emails/ca/{{confirmAccountToken}}",
+    "mailerFromEmail": "noreply@clrquantumx.com",
+    "logoUrl": "https://s3-eu-west-1.amazonaws.com/staging-2-clrquantumx.chaincreator.exchange/static/img/themes/clrquantumx/clr.png",
+    "templatePath": "cce-wl"
+  },
+  "commissionPartner": "60",
+  "themeName": "clrquantumx",
+  "defaultMarketPair": "BTC-USDC",
+  "defaultPairs": [
+    "BTC-USDC",
+    "ETH-USDC",
+    "XRP-USDC",
+    "LTC-USDC",
+    "ETH-BTC",
+    "LTC-BTC",
+    "BCH-BTC",
+    "ETH-BTC",
+    "XRP-BTC",
+    "LTC-BTC"
+  ],
+  "projectType": "cce-whitelabel",
+  "title": "CLRQuantumX | Cryptocurrency Exchange",
+  "domain": "staging-2-clrquantumx.chaincreator.exchange"
+}

@@ -1,0 +1,46 @@
+/* ----------------------
+   PAIR SELECTOR
+---------------------- */
+
+.cce-pair-selector-menu {
+  @include fontFamilyTrade;
+
+  i {
+    background-color: inherit !important;
+  }
+
+  .btn {
+    height: 25px !important;
+  }
+
+  .btn__content {
+    padding: 0px 0px 0px 8px ;
+    text-align: center;
+    height: 20px;
+    
+    &:before {
+      background-color: currentColor;
+    }
+  }
+}
+
+.cce-pair-selector__activator {
+  width: 140px;
+}
+
+.cce-pair-selector-content {
+  width: 440px;
+  // min-height: 100px;
+  z-index: 99999;
+  position: relative;
+}
+
+.cce-pair-selector-tabs {
+  .tabs__container {
+    height: 36px;
+  }
+
+  .tabs__item {
+    font-size: 16px;
+  }
+}

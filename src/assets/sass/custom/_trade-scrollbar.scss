@@ -1,0 +1,32 @@
+/* ----------------------
+  TRADE SCROLL-BAR
+---------------------- */
+.ps {
+  .ps__scrollbar-y-rail {
+    margin: 5px 2px;
+    z-index: 4;
+  }
+
+  .ps__scrollbar-x-rail {
+    margin: 2px 5px;
+  }
+
+  &.ps--in-scrolling {
+    &.ps--y > .ps__scrollbar-y-rail,
+    &.ps--x > .ps__scrollbar-x-rail {
+      @include backgroundTransparent;
+    }
+  }
+  &:hover {
+    &>.ps__scrollbar-y-rail:hover,
+    &>.ps__scrollbar-x-rail:hover {
+      @include backgroundTransparent;
+    }
+  }
+
+  &>.ps__scrollbar-y-rail>.ps__scrollbar-y,
+  &>.ps__scrollbar-x-rail>.ps__scrollbar-x {
+    background-color: transparent;
+    opacity: 0.55;
+  }
+}

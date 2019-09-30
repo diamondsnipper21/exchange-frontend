@@ -1,0 +1,69 @@
+/* ----------------------
+  WITHDRAWALS TAB
+---------------------- */
+.withdrawals-tab {
+  table {
+    thead, tbody {
+      tr {
+        @include flexRow;
+
+        @include media(sm) {
+          padding: 10px 0 !important;
+        }
+
+        th, td {
+          @include flexAlignCenter;
+
+          @include media(sm) {
+            padding: 5px 0 !important;
+          }
+          @include media(xs_med) {
+            font-size: 11px;
+          }
+
+          &:nth-child(1) {
+            width: 20%;
+            @include media(md) {
+              width: 10%;
+            }
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(2) {
+            width: 10%;
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(3) {
+            width: 20%;
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(4) {
+            width: 40%;
+            @include media(md) {
+              width: 50%;
+            }
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(5) {
+            width: 10%;
+            text-transform: capitalize;
+            font-weight: bolder;
+            @include media(md) {
+              width: inherit;
+            }
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

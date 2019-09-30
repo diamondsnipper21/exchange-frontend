@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+     width="2300"
+     height="1820">
+
+  <g transform="scale(15) translate(10, 10)">
+    <defs id="SvgjsDefs1461"/>
+    <g id="SvgjsG1462" featureKey="root" fill="#000"/>
+    <g id="SvgjsG1463" featureKey="symbol1" fill="#000"
+       transform="matrix(0.8955377136372767,0,0,0.8955377136372767,0.24588247219258,0.14945324610752664)">
+      <g id="SvgjsG1464">
+        <title>Artboard 1</title>
+        <rect x="61.08" y="31.36" width="13.12" height="2" transform="translate(-3.07 57.31) rotate(-45)"/>
+        <rect x="31.36" y="25.8" width="2" height="13.12" transform="translate(-13.4 32.36) rotate(-45)"/>
+        <path d="M22.57,77,17,82.57A4.05,4.05,0,1,0,18.43,84L24,78.43ZM15,88a2,2,0,1,1,2-2A2,2,0,0,1,15,88Z"/>
+        <rect x="25.8" y="67.64" width="13.12" height="2" transform="translate(-39.06 42.99) rotate(-45)"/>
+        <rect x="66.64" y="62.08" width="2" height="13.12" transform="translate(-28.72 67.93) rotate(-45)"/>
+        <path
+          d="M85,11a4,4,0,0,0-3.43,6L76,22.57,77.43,24,83,18.43A4,4,0,1,0,85,11Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,85,17Z"/>
+        <path
+          d="M15,19a4,4,0,0,0,2-.57L22.57,24,24,22.57,18.43,17A4,4,0,1,0,15,19Zm0-6a2,2,0,1,1-2,2A2,2,0,0,1,15,13Z"/>
+        <path
+          d="M85,82a4,4,0,0,0-2,.57L77.43,77,76,78.43,81.57,84A4,4,0,1,0,85,82Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,85,88Z"/>
+        <path
+          d="M64,41.18l.14,0-.14,0V41h-.32L50,37,36.32,41H36v.09l-.14,0,.14,0V59.3l14,4.26L64,59.3Zm-14-2.1,7,2.05-7,2.06-7-2.06Zm0,22.39L38,57.82V41.76l12,3.52,12-3.52V57.82Z"/>
+        <rect x="76" y="49" width="6" height="2"/>
+        <rect x="68" y="49" width="6" height="2"/>
+        <rect x="84" y="49" width="3" height="2"/>
+        <rect x="18" y="49" width="6" height="2"/>
+        <rect x="26" y="49" width="6" height="2"/>
+        <rect x="13" y="49" width="3" height="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

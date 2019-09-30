@@ -1,0 +1,36 @@
+/* ----------------------
+  NOTIFICATIONS
+---------------------- */
+.cce-notification {
+  @include fontFamilyTrade;
+  padding: 15px;
+  margin: 10px 10px 0 10px;
+  font-size: 13px;
+  font-weight: 300;
+  /*color: #ffffff;
+  background: #44A4FC;
+  border-left: 5px solid #187FE7;*/
+  color: $simple-white-1;
+  background: $cce-notification-default-2;
+  border-left: 5px solid $cce-notification-default-1;
+  border-radius: 2px;
+
+  &.warn {
+    color: $simple-white-0;
+    background: #dd842e !important;
+    border-left-color: #824e1c !important;
+  }
+
+  &.error {
+    color: $simple-white-0;
+    background: $cce-notification-error-1 !important;
+    border-left-color: $cce-notification-error-2 !important;
+  }
+
+  &.success {
+    color: $simple-white-0;
+    background: $cce-notification-success-1 !important;
+    border-left-color: $cce-notification-success-2!important;
+  }
+}
+  

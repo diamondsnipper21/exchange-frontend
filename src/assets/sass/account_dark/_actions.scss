@@ -1,0 +1,32 @@
+/* ----------------------
+  ACTIONS
+---------------------- */
+.cce-account__actions {
+  padding: 0 15px 1px 15px;
+  background: $exchange-gray-6;
+  // height: 80px;
+  @include media(sm) {
+    padding: 15px;
+  }
+  .icon--selection-control {
+    color: $exchange-green-transparent-0;
+  }
+}
+
+.cce-account__actions-search {
+  max-width: 300px;
+  margin-top: -10px;
+}
+
+.cce-account__actions-hide {
+  max-width: 230px;
+
+  .checkbox {
+    padding: 14px 0 0 0;
+
+    label {
+      margin-top: -2px;
+      color: $exchange-green-transparent-0 !important;
+    }
+  }
+}

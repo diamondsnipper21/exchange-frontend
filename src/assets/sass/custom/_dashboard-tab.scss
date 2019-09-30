@@ -1,0 +1,49 @@
+/* ----------------------
+  DASHBOARD TAB
+---------------------- */
+.dashboard-tab {
+  table {
+    thead, tbody {
+      tr {
+        @include flexRow;
+
+        @include media(sm) {
+          padding: 10px 0 !important;
+        }
+
+        th, td {
+          @include flexAlignCenter;
+
+          @include media(sm) {
+            padding: 5px 0 !important;
+          }
+          @include media(xs_med) {
+            font-size: 11px;
+          }
+          .location-wrap {
+            width: auto;
+          }
+
+          &:nth-child(1) {
+            width: 30%;
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(2) {
+            width: 30%;
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(3) {
+            width: 40%;
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

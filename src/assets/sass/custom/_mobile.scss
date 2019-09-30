@@ -1,0 +1,55 @@
+@include media(lg_med) {
+  .toolbar__side-icon {
+    display: none;
+  }
+  .cce-account__toolbar {
+    .toolbar__content {
+      .layout {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media (min-width: 993px) {
+  .show-mobile {
+    display: none;
+  }
+  .hide-mobile {
+    display: inherit;
+  }
+}
+
+@include media(md) {
+  .show-mobile {
+    display: inherit;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .cce-account__toolbar {
+    .toolbar__content {
+      .layout {
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: 5px !important;
+        .static-menu, .user-menu {
+          display: none;
+        }
+      }
+    }
+  }
+  .cce-account__navigation .static-menu {
+    position: initial;
+  }
+  .cce-account__content {
+    .user-settings {
+      flex-direction: column;
+      .flex {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

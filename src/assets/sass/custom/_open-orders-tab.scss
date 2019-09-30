@@ -1,0 +1,116 @@
+/* ----------------------
+  OPEN ORDERS TAB
+---------------------- */
+.cce-orders-header-icon {
+  font-size: 15px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.cce-orders-total__content {
+  position: relative;
+
+  &__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.cce-nodata-center {
+  text-align: center;
+}
+
+.open-orders-tab {
+  table {
+    thead, tbody {
+      tr {
+        @include flexRow;
+        justify-content: space-between;
+
+        @include media(sm) {
+          padding: 10px 0 !important;
+        }
+
+        th, td {
+          @include flexAlignCenter;
+
+          @include media(sm) {
+            padding: 5px 0 !important;
+          }
+          @include media(xs_med) {
+            font-size: 11px;
+          }
+
+          &:nth-child(1) {
+            width: 10%;
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(2) {
+            width: 8%;
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(3) {
+            width: 10%;
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(4) {
+            width: 12%;
+            @include media(sm) {
+              width: 100%;
+            }
+          }
+          &:nth-child(5) {
+            width: 12%;
+            @include media(sm) {
+              width: 100%;
+              padding: 10px 0 !important;
+            }
+          }
+          &:nth-child(6) {
+            width: 12%;
+            @include media(sm) {
+              width: 100%;
+              padding: 10px 0 !important;
+            }
+          }
+          &:nth-child(7) {
+            width: 12%;
+            @include media(sm) {
+              width: 100%;
+              padding: 10px 0 !important;
+            }
+          }
+          &:nth-child(8) {
+            width: 7%;
+            @include media(sm) {
+              width: 100%;
+              padding: 10px 0 !important;
+            }
+          }
+          &:nth-child(9) {
+            width: 7%;
+            @include media(sm) {
+              width: 100%;
+              padding: 10px 0 !important;
+            }
+          }
+          &:nth-child(10) {
+            width: 10%;
+            @include media(sm) {
+              width: 100%;
+              padding: 10px 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

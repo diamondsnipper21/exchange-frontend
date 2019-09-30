@@ -1,0 +1,545 @@
+/* ----------------------
+  ADMIN PANEL
+---------------------- */
+
+.cce-admin__panel {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: $light-trade-colorContentBg;
+  min-width: 0;
+  position: relative;
+  flex: 1 1 auto;
+  flex-direction: column;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.cce-admin__panel-title {
+  background: $light-trade-colorHeaderBg;
+  border-bottom: 1px solid $light-trade-colorDivider;
+  padding: 8px 10px;
+  color: $light-trade-colorHeaderText;
+  max-height: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-family: $trade-fontFamily;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cce-admin__panel-content {
+  height: 100%;
+}
+
+.cce-admin__panel-hide {
+  margin: 6px 7px 0 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.cce-admin__panel-orders-stats {
+  max-height: 40px;
+  min-height: 24px;
+  background: $light-trade-colorDivider;
+  border-top: 1px solid $light-trade-colorDivider;
+  border-bottom: 1px solid $light-trade-colorDivider;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.cce-admin__panel-orders-stats--sticky {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+}
+
+.cce-admin__panel-orders-stats-price {
+  position: relative;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 13px;
+}
+
+.cce-admin__panel-orders-stats-arrow {
+  position: absolute;
+  top: 6px;
+  left: -13px;
+  font-size: 13px;
+}
+
+.cce-admin__panel-orders-stats--no-arrow {
+  color: $light-trade-colorContentBg !important;
+}
+
+.cce-admin__panel-orders-stats-change {
+  text-align: right;
+  margin: 0 17px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cce-admin__panel-orders-stats-change-title {
+  font-size: 13px;
+  position: relative;
+  top: 0;
+  font-family: $trade-fontFamily;
+  margin-right: 5px;
+}
+
+.cce-admin__panel-orders-stats-change-value {
+  display: inline-flex;
+  overflow: hidden;
+  max-width: 80px;
+}
+
+.cce-admin__panel-orders--hide-sell {
+  max-height: 0;
+}
+
+.cce-admin__panel-orders--hide-buy {
+  max-height: 30px;
+}
+
+
+.cce-admin_panel_user {
+  .cce-admin_panel-save-row {
+    padding-top:10px;
+  }
+
+  .cce-wallets__header {
+    background: #fff;
+    color: $light-chart-legendItemStyleColor !important
+  }
+
+  .cce-trade__table-th {
+    font-weight: 500;
+  }
+
+  .cce-admin_panel-2fa-container {
+    display: flex;
+    .cce-admin_panel-2fa-status {
+      width:33%;
+      margin:1px;
+      text-align: center;
+      background: $light-trade-colorInputBg !important;
+      height:30px;
+
+      span {
+        line-height: 30px;
+      }
+    }
+
+    .cce-admin_panel-2fa-active {
+      background: #dd842e !important;
+      color: white;
+    }
+  }
+  .cce-admin_panel-form-row {
+    margin: 6px 0;
+
+    .btn {
+      box-shadow: none;
+    }
+
+    .flex {
+      align-items: center;
+    }
+
+    .cce-admin_panel-control-select {
+      .input-group__selections__comma {
+        padding-left:10px;
+      }
+    }
+
+    .cce-admin_panel-control-input-text {
+      height: 30px;
+      background: $light-trade-colorInputBg !important;
+      padding-left:10px;
+      padding-right:10px;
+    }
+    
+    .cce-admin_panel-label-right {
+      span {
+        text-align: right;
+        padding-right:15px;
+      }
+    }
+
+    .cce-admin_panel-kyc-panel {
+      height:200px;
+      background: $light-trade-colorInputBg !important;
+    }
+
+    .cce-admin_panel-border {
+      border:1px solid red;
+    }
+
+    .cce-admin_panel-control-button {
+      height: 30px;
+      background: $light-trade-colorHigh !important;
+      margin-top:0px!important;
+      margin-bottom:0px!important;
+      color: #fff;
+    }
+
+    .cce-admin_panel-control-button-save {
+      margin:0px;
+    }
+  }
+
+  .cce-users__tabs {
+    position: relative;
+    width: 100%;
+  
+    .tabs__container {
+      height: 36px;
+    }
+  
+    .tabs__bar {
+      background-color: $light-trade-colorHeaderBg;
+    }
+  
+    .accent {
+      background-color: $light-trade-colorActive !important;
+      display: none;
+      height: 1px;
+    }
+  
+    .tabs__item {
+      text-transform: none;
+      color: $light-trade-colorHeaderText;
+      @include fontFamilyTrade;
+    }
+  
+    .tabs__item--active {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  
+    .tabs__item:not(.tabs__item--active) {
+      opacity: 0.45 !important;
+    }
+  }
+
+  .cce-admin-payment-widget {
+    height:100%;
+    overflow-y: auto;
+    background: $light-trade-colorContentBg;
+
+    .datatable{
+     .icon {
+      color: #4c6576;
+     }
+    }
+  }
+
+  .cce-admin-wallet-widget {
+    height:100%;
+    background: $light-trade-colorContentBg;
+
+    tr.cce-wallets__table-row {
+      border-bottom: 1px solid #23283c!important;
+    }
+  }
+
+  .cce-admin-modal {
+    font-family: Poppins,sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+
+    .btn {
+      box-shadow: none;
+    }
+
+    .cce-admin-modal__container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      // min-height: 170px;
+      // max-height: 170px;
+      min-width: 500px;
+      max-width: 500px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-color: $light-trade-colorHeaderBg;
+    }
+
+    .cce-admin-modal__backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,.5);
+    }
+
+    .cce-admin-modal__content {
+      font-weight: 400;
+      background: $light-trade-colorContentBg;
+    }
+
+    .cce-admin-modal-message {
+      padding:0px 0px 20px 10px;
+    }
+
+    .cce-admin-modal-title {
+      height:35px;
+      padding:6px 12px 6px 12px;
+      color: #fff;
+    }
+    .cce-admin-modal__close-btn {
+      float:right;
+      font-size: 15px;
+    }
+    .cce-admin_panel-control-input-text{ 
+      padding-left:10px!important; 
+    } 
+    .cce-admin_panel-control-select { 
+      padding-left:10px!important; 
+    } 
+  }
+}
+
+
+.cce-admin_panel_settings {
+  .cce-admin-coin-select {
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    padding: 10px 13px;
+    line-height: 1.5;
+    -webkit-box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.1) inset;
+  }
+
+  @include fontFamilyTrade;
+  .cce-admin_panel-progress {
+    margin:0px;
+  }
+
+  .cce-admin_panel-save-row {
+    padding-top:10px;
+  }
+
+  .cce-admin_panel-form-row {
+    margin: 6px 0;
+    .cce-admin_panel-a-link {
+      color: #1976d2;
+      cursor: pointer;
+      background-color: transparent;
+      font-weight: 400;
+      text-decoration: underline;
+      margin:0px;
+      text-align: left;
+
+      .btn__content {
+        padding:0px;
+
+        &:before {
+          background-color: transparent;
+        }
+      }
+    }
+
+    h3 {
+      font-weight: 500;
+    }
+
+    .btn {
+      box-shadow: none;
+    }
+    .cce-admin_panel-wide-input {
+      width:400px;
+    }
+
+    .bg-cc {
+      background: #ebebeb;
+      width: 212px;
+      text-align: center;
+
+      img {
+        width: 208px;
+      }
+    }
+
+    .bg-cc-mobile {
+      width: 60px;
+      text-align: center;
+      background: #ebebeb;
+    }
+
+    .img-logo-container {
+      min-height: 60px;
+
+      img {
+        height:60px;
+      }
+    }
+
+    .img-favicon-container {
+      min-height: 16px;
+
+      img {
+        height:16px;
+      }
+    }
+
+    .cce-admin_panel-control-color-title {
+      width:150px;
+    }
+
+    .cce-admin_panel-control-input-text {
+      height: 30px;
+      background: $light-trade-colorInputBg;
+      padding-left:10px;
+      padding-right:10px;
+    }
+    
+    .cce-admin_panel-control-color-input {
+      display: flex;
+      input {
+        max-width:120px!important;
+        display: flex;
+      }
+      max-width:150px!important;
+      margin:0px;
+      padding:0px;
+      float: right;
+      position: relative;
+
+      .cce-admin_panel-color-panel {
+        position: absolute;
+        z-index: 10;
+      }
+    }
+
+    .cce-admin_panel-color-preview {
+      display: flex;
+      width:30px;
+      height:30px;
+      border: 1px solid #222836;
+      align-items: center;
+      margin: 0px 0px 0px 2px;
+    }
+  
+    .cce-admin_panel_top_border {
+      border-top: 1px solid #23283c;
+      padding-top:20px;
+    }
+
+    .cce-admin_panel-control-button {
+      height: 30px;
+      background: $light-trade-colorHigh !important;
+      margin-top:0px!important;
+      margin-bottom:0px!important;
+      color: #fff;
+    }
+
+    .cce-admin_panel-control-button-save {
+      margin:0px;
+    }
+  }
+
+  .cce-settings__tabs {
+    position: relative;
+    width: 100%;
+  
+    .tabs__container {
+      height: 36px;
+    }
+  
+    .tabs__bar {
+      background-color: $light-trade-colorHeaderBg;
+    }
+  
+    .accent {
+      background-color: $light-trade-colorActive !important;
+      display: none;
+      height: 1px;
+    }
+  
+    .tabs__item {
+      text-transform: none;
+      color: $light-trade-colorHeaderText;
+      @include fontFamilyTrade;
+    }
+  
+    .tabs__item--active {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  
+    .tabs__item:not(.tabs__item--active) {
+      opacity: 0.45 !important;
+    }
+  }
+
+  .cce-admin-modal {
+    font-family: Poppins,sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+
+    .btn {
+      box-shadow: none;
+    }
+
+    .cce-admin-modal__container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      min-width: 350px;
+      max-width: 500px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-color: $light-trade-colorHeaderBg;
+    }
+
+    .cce-admin-modal__backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,.5);
+    }
+
+    .cce-admin-modal__content {
+      font-weight: 400;
+      background: $light-trade-colorContentBg;
+    }
+
+    .cce-admin-modal-message {
+      padding:0px 0px 20px 10px;
+    }
+
+    .cce-admin-modal-title {
+      height:35px;
+      padding:6px 12px 6px 12px;
+      color: #fff;
+    }
+    .cce-admin-modal__close-btn {
+      float:right;
+      font-size: 15px;
+    }
+  }
+}

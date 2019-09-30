@@ -1,0 +1,163 @@
+/* ----------------------
+  CAROUSEL SLIDER FOR DASHBOARD
+---------------------- */
+.dashboard-carousel {
+  height: 300px;
+
+  .carousel__controls {
+    button {
+      background-color: $transparent-black-5 !important;
+    }
+  }
+  .dark-theme {
+    background-color: #ffffff;
+
+    h3 {
+      max-width: 50%;
+      font-size: 23px;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: inline;
+      color: $exchange-green-2;
+      line-height: 1.7;
+      background-color: $simple-white-0;
+      box-shadow: 15px 0 0 $simple-white-0, -15px 0 0 $simple-white-0;
+      padding: 3px 0;
+      margin: 0 0 20px 15px;
+      letter-spacing: 1px;
+      @include media(md) {
+        margin:  0 0 0 15px;
+        line-height: 1.1;
+        font-size: 20px;
+        max-width: 100%;
+      }
+    }
+    p {
+      max-width: 50%;
+      font-size: 18px;
+      line-height: 1.2;
+      color: $transparent-white-1;
+      margin: 15px 0 0 0;
+      @include media(md) {
+        font-size: 14px;
+        max-width: 100%;
+      }
+    }
+    .btn {
+      max-width: 50%;
+      border-radius: 0px;
+      color: $simple-white-0;
+      height: 30px;
+      margin: 15px 0 0 0;
+      box-shadow: none;
+      @include backgroundTransparent;
+      border: 2px solid $simple-white-0;
+      @include media(md) {
+        margin: 0 0 10px 0;
+        max-width: 100%;
+      }
+
+      .btn__content {
+        max-width: 100%;
+        padding: 0 20px 3px 20px !important;
+      }
+    }
+    img {
+      &.right-img {
+        max-width: 50%;
+        max-height: 200px;
+        position: absolute;
+        right: 30px;
+        @include media(xs_max) {
+          position: relative;
+          right: inherit;
+        }
+      }
+    }
+  }
+  .light-theme {
+    background-color: #ffffff;
+
+    h3 {
+      max-width: 50%;
+      font-size: 23px;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: inline;
+      color: $simple-white-0;
+      line-height: 1.7;
+      background-color: $exchange-green-2;
+      box-shadow: 15px 0 0 $exchange-green-2, -15px 0 0 $exchange-green-2;
+      padding: 3px 0;
+      margin: 0 0 20px 15px;
+      @include media(md) {
+        margin: 0 0 0 15px;
+        line-height: 1.1;
+        font-size: 20px;
+        max-width: 100%;
+      }
+    }
+    p {
+      max-width: 50%;
+      font-size: 18px;
+      line-height: 1.2;
+      color: $exchange-green-3;
+      margin: 15px 0 0 0;
+      @include media(md) {
+        font-size: 12px;
+        max-width: 100%;
+      }
+    }
+    .btn {
+      max-width: 50%;
+      border-radius: 0px;
+      color: $exchange-green-3;
+      height: 30px;
+      margin: 15px 0 0 0;
+      box-shadow: none;
+      @include backgroundTransparent;
+      border: 2px solid $exchange-green-3;
+      @include media(md) {
+        margin: 0 0 10px 0;
+        max-width: 100%;
+      }
+
+      .btn__content {
+        padding: 0 20px 3px 20px !important;
+      }
+    }
+    img {
+      &.right-img {
+        max-width: 40%;
+        max-height: 200px;
+        position: absolute;
+        right: 30px;
+        @include media(xs_max) {
+          position: relative;
+          right: inherit;
+        }
+      }
+    }
+  }
+  .jumbotron__image {
+  }
+  .jumbotron__content {
+    @include flexColumn;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 35px;
+    @include media(xs_max) {
+      padding: 0 25px;
+      align-items: flex-start;
+    }
+  }
+  .carousel__controls {
+    height: 30px;
+    background-color: transparent;
+    .carousel__controls__item i {
+      font-size: 10px !important;
+      color: $simple-white-0;
+    }
+  }
+}

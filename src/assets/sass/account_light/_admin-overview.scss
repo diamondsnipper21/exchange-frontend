@@ -1,0 +1,79 @@
+/* ----------------------
+  ADMIN OVERVIEW
+---------------------- */
+
+.cce-admin-overview__statistics {
+  // margin: 16px 0;
+  // flex-grow: 0.333;
+}
+
+.cce-admin__overview-card {
+  flex-direction: column;
+  height: 200px;
+
+  .cce-admin__overview-card-text {
+    padding: 0 10px;
+    span {
+      color: $dark-trade-colorSubHeaderText
+    }
+  }
+}
+
+.cce-admin__highcharts {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $light-trade-colorContentBg;
+
+  flex-grow: 1;
+
+  .highcharts-legend-item {
+    font-family: $trade-fontFamily;
+  }
+}
+
+.cce-admin__overview-chart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cce-admin-overview__trades,
+.cce-admin-overview__users {
+  width: 25%;
+}
+
+/* ----------------------
+  ADMIN STATISTICS
+---------------------- */
+
+.cce-admin__timeline-controls {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  .cce-admin__timeline-controls-item {
+    width: auto;
+    margin: 0 4px;
+    padding: 0 6px;
+    height: 20px;
+    color: $transparent-white-1;
+
+    &,
+    .btn__content:before {
+      border-radius: 0 !important;
+    }
+  }
+
+  .cce-admin__timeline-controls-item--active {
+    .btn__content {
+      &:before {
+        background-color: currentColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "_id": "5d5d6ae51aec3fc18811a357",
+  "projectId": "f1a32d1b-ce3a-4fbf-9c6d-c3238b40d89d",
+  "admins": [],
+  "assetsBucket": "staging-2-genblock.chaincreator.exchange",
+  "themeSettings": {
+    "tradeTabsOrder": [
+      "limit",
+      "market",
+      "stop"
+    ],
+    "logoHref": "https://www.genblock.one/",
+    "logoUrlAccount": "/static/img/themes/genblock/logo-exchange-on-dark.svg",
+    "bgUrlAuth": {
+      "backgroundImage": "url(/static/img/themes/cce/blur-auth-bg.jpg)"
+    },
+    "googleAuthName": "Genblock.One",
+    "logoUrlAuth": "/static/img/themes/genblock/logo-exchange-on-dark.svg",
+    "customLogin": "#/login",
+    "navItems": [
+      {
+        "icon": "fas fa-tachometer-alt",
+        "name": "Dashboard",
+        "to": "account.dashboard"
+      },
+      {
+        "activeTabs": [
+          "account.deposits",
+          "account.withdrawals"
+        ],
+        "icon": "fas fa-wallet",
+        "name": "Wallet",
+        "to": "account.wallet"
+      },
+      {
+        "activeTabs": [
+          "account.tradeHistory"
+        ],
+        "icon": "fas fa-exchange-alt",
+        "name": "Orders",
+        "to": "account.openOrders"
+      },
+      {
+        "icon": "fas fa-sliders-h",
+        "name": "Settings",
+        "to": "account.settings"
+      },
+      {
+        "icon": "fas fa-link",
+        "name": "Referral",
+        "to": "account.referral"
+      }
+    ],
+    "themeMode": true,
+    "showAllApps": true,
+    "logoUrlPartner": "/static/img/themes/genblock/logo-exchange-symbol-on-dark.svg",
+    "faviconUrl": "/static/img/themes/genblock/logo-exchange-favicon.png",
+    "carouselItems": [],
+    "themeAnalyticsGlobal": "UA-117801824-12",
+    "themeAnalyticsClient": "",
+    "navStaticPages": [
+      {
+        "name": "Support",
+        "href": "https://zendesk.com/"
+      },
+      {
+        "name": "Terms",
+        "href": "https://www.genblock.one/terms"
+      },
+      {
+        "name": "Fees",
+        "href": "https://www.genblock.one/fees"
+      }
+    ],
+    "themeHotjarClient": "",
+    "logoUrlTrade": "/static/img/themes/genblock/logo-exchange-symbol-on-dark.svg"
+  },
+  "code": "GBLK",
+  "commissionPlatform": "40",
+  "commissionPartner": "60",
+  "cloudfrontDistributionId": "",
+  "emailTemplateSettings": {
+    "confirmNewIpUrl": "https://{{domain}}/#/emails/cip/{{confirmNewIPToken}}",
+    "recoverPasswordUrl": "https://{{domain}}/#/emails/rp/{{recoverPasswordToken}}",
+    "appId": "exchange",
+    "domain": "staging-2-genblock.chaincreator.exchange",
+    "name": "Genblock.One",
+    "confirmPaymentUrl": "https://{{domain}}/#/emails/cpmt/{{confirmPaymentToken}}",
+    "confirmUrl": "https://{{domain}}/#/emails/ca/{{confirmAccountToken}}",
+    "mailerFromEmail": "noreply@genblock.one",
+    "templatePath": "exchange",
+    "supportEmail": "support@genblock.one"
+  },
+  "themeName": "genblock",
+  "defaultPairs": [
+    "BTC-USDC",
+    "ETH-USDC",
+    "XRP-USDC",
+    "LTC-USDC",
+    "BCH-BTC",
+    "ETH-BTC",
+    "XRP-BTC",
+    "LTC-BTC",
+    "ZEC-BTC",
+    "DASH-BTC",
+    "ETC-BTC",
+    "HDP-BTC"
+  ],
+  "defaultMarketPair": "BTC-USDC",
+  "projectType": "cce-whitelabel",
+  "domain": "staging-2-genblock.chaincreator.exchange",
+  "title": "GENBLOCK ONE | Cryptocurrency Exchange"
+}
